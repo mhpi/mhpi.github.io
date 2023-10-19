@@ -18,6 +18,7 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install git+https://taddyb:${GHCR_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git@9.4.2-insiders-4.42.0
+      - run: pip install git+https://taddyb:${GHCR_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
       - run: pip install pillow cairosvg
+      - run: mkdocs build
       - run: mkdocs gh-deploy --force
