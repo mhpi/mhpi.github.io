@@ -136,7 +136,7 @@ nav:
           #  - Plugins:
           #      - docs/plugins/index.md
           #      - HydroDL: docs/plugins/hydrodl.md
-    - Projects: 
+    - Community: 
         - projects/index.md
         - HBV: projects/feng_2023.md
         - Muskingum-Cunge: projects/bindas_2023.md

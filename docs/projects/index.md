@@ -1,6 +1,6 @@
-# Projects 
+# Community 
 
-See below for our projects
+See below for coding projects developed by the community that utilize HydroDL
 
 <div class="result" markdown>
   <div class="grid cards" markdown>
