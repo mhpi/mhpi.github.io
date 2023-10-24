@@ -19,10 +19,11 @@ Will be released upon publication
 
 
 ```bibtex
-@techreport{bindas2023improving,
-  title={Improving large-basin streamflow simulation using a modular, differentiable, learnable graph model for routing},
+@article{bindas2023improving,
+  title={Improving large-basin river routing using a differentiable Muskingum-Cunge model and physics-informed machine learning},
   author={Bindas, Tadd and Tsai, Wen-Ping and Liu, Jiangtao and Rahmani, Farshid and Feng, Dapeng and Bian, Yuchen and Lawson, Kathryn and Shen, Chaopeng},
+  journal={Authorea Preprints},
   year={2023},
-  institution={Copernicus Meetings}
+  publisher={Authorea}
 }
 ```
