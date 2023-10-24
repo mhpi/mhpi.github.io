@@ -22,8 +22,8 @@ See below for coding projects developed by the community that utilize HydroDL
 -   $\delta$ MC-Juniata-hydroDL2 __(Bindas et al. 2023)__
 
     ---
-
-    A differentiable routing method that mimics the classical Muskingum-Cunge routing model over a river network but embeds an NN to infer parameterizations for Manning’s roughness (_n_) and channel geometries from raw reach-scale attributes like catchment areas and sinuosity. 
+![Manning's n recovery against USGS Data](../assets/project-figures/bindas_2023.png){align="left" width="250" loading=lazy }
+A differentiable routing method that mimics the classical Muskingum-Cunge routing model over a river network but embeds an NN to infer parameterizations for Manning’s roughness (_n_). 
 
     [:octicons-arrow-right-24: Read More Here][bindas_2023.md]
 
