@@ -11,6 +11,19 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.png
   icon:
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
     repo: fontawesome/brands/github
   name: material
     #custom_dir: material/overrides
@@ -45,6 +58,20 @@ theme:
       accent: indigo
 
 plugins:
+  # - blog
+    - git-authors
+    - git-revision-date-localized:
+          enable_creation_date: true
+          fallback_to_build_date: true
+      # - rss:
+      #      match_path: blog/posts/.*
+      #     date_from_meta:
+      #       as_creation: date
+      #    categories:
+      #      - categories
+              #       - tags
+   #- social:
+      #cards_layout: deafult/accent
     - search:
           separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])' 
             #- minify:
@@ -70,6 +97,8 @@ extra:
 markdown_extensions:
     - pymdownx.highlight:
           anchor_linenums: true
+          line_spans: __span
+          pygments_lang_class: true
     - pymdownx.inlinehilite
     - pymdownx.snippets
     - admonition
@@ -87,6 +116,9 @@ markdown_extensions:
     - pymdownx.emoji:
          emoji_index: !!python/name:material.extensions.emoji.twemoji
          emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - def_list
+    - pymdownx.tasklist:
+          custom_checkbox: true
 
 nav:
     - HydroDL: index.md
@@ -94,9 +126,16 @@ nav:
         - Installation: Installation.md
         - Quick Start: Quick_start.md
         - Example: Example.md
-        - Contribute: Contribute.md
-    - Docs: 
-        - Docs.md
+          #   - Contribute: Contribute.md
+          # - Docs: 
+          # - docs/index.md
+          # - Datasets: docs/datasets.md  
+          #  - Neural Networks: docs/neural_networks.md
+          #  - Physics Models: docs/physics_models.md
+          # - Experiments: docs/experiments.md
+          #  - Plugins:
+          #      - docs/plugins/index.md
+          #      - HydroDL: docs/plugins/hydrodl.md
     - Projects: 
         - projects/index.md
         - HBV: projects/feng_2023.md

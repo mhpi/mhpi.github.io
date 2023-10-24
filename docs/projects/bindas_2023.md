@@ -1,6 +1,17 @@
 # $\delta$ MC-Juniata-hydroDL2
 
-Documentation coming soon
+!!! info
+
+    This paper is currently in preprint
+
+## Code Release
+
+Will be released upon publication
+
+## Results
+
+Will be released upon publication
+
 
 ## Bibtex Citation
 
