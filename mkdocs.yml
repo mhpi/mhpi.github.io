@@ -142,9 +142,16 @@ nav:
         - Muskingum-Cunge: projects/bindas_2023.md
 
 extra_javascript:
-  - javascripts/katex.js 
+  # - javascripts/plots.js
+  - javascripts/katex.js
+  - https://d3js.org/d3.v6.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  - https://unpkg.com/react@17/umd/react.development.js
+  - https://unpkg.com/react-dom@17/umd/react-dom.development.js
+  - https://cdnjs.cloudflare.com/ajax/libs/recharts/2.1.6/Recharts.min.js
+  - https://unpkg.com/@babel/standalone/babel.min.js
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - stylesheets/extra.css
