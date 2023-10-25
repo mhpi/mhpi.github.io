@@ -136,10 +136,11 @@ nav:
           #  - Plugins:
           #      - docs/plugins/index.md
           #      - HydroDL: docs/plugins/hydrodl.md
-    - Code: 
-        - projects/index.md
-        - HBV: projects/feng_2023.md
-        - Muskingum-Cunge: projects/bindas_2023.md
+    - Codes: 
+        - codes/index.md
+        - HBV: codes/feng_2023.md
+        - Muskingum-Cunge: codes/bindas_2023.md
+        - Test Project: codes/test.md
 
 extra_javascript:
   # - javascripts/plots.js
