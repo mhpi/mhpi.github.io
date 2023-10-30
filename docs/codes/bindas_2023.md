@@ -6,7 +6,7 @@
 
 ## Code Release
 
-Will be released upon publication
+I will eventually release the code
 
 ## Results
 
