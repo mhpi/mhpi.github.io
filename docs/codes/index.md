@@ -21,7 +21,7 @@ See below for coding projects developed by the community that utilize HydroDL
 -   [$\delta$ MC-Juniata-hydroDL2 __(Bindas et al. 2023)__][bindas_2023.md]
 
     ---
-![Manning's n recovery against USGS Data](../assets/project-figures/bindas_2023.png){align="left" width="150"}
+![Manning's n recovery against USGS Data](../assets/project-figures/bindas_2023.png){align="left" width="120"}
 A differentiable routing method that mimics the classical Muskingum-Cunge routing model over a river network but embeds an NN to infer parameterizations for Manning’s roughness (_n_). 
 
 
@@ -33,8 +33,7 @@ A differentiable routing method that mimics the classical Muskingum-Cunge routin
 
 -   [Multiscale __(Liu et al. 2022)__][liu_2022.md]
 
-    ---
-    
+    --- 
 ![A multiscale DL scheme](../assets/project-figures/liu_2022.jpg){align="left" width="120"}
 A multiscale DL scheme learning simultaneously from satellite and in situ data to predict 9 km daily soil moisture (5 cm depth). 
 
