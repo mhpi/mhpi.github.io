@@ -140,6 +140,7 @@ nav:
         - codes/index.md
         - HBV: codes/feng_2023.md
         - Muskingum-Cunge: codes/bindas_2023.md
+        - Multiscale: codes/liu_2022.md
         - Test Project: codes/test.md
 
 extra_javascript:
