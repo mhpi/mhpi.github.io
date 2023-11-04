@@ -31,6 +31,18 @@ A differentiable routing method that mimics the classical Muskingum-Cunge routin
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
+-   [Multiscale __(Liu et al. 2022)__][liu_2022.md]
+
+    ---
+![A multiscale DL scheme](../assets/project-figures/liu_2022.jpg){align="left" width="150"}
+A multiscale DL scheme learning simultaneously from satellite and in situ data to predict 9 km daily soil moisture (5 cm depth). 
+
+  </div>
+</div>
+
+<div class="result" markdown>
+  <div class="grid cards" markdown>
+
 -   [Test][test.md]
 
     ---
@@ -41,8 +53,10 @@ A differentiable routing method that mimics the classical Muskingum-Cunge routin
 
   [feng_2023.md]: ../projects/feng_2023.md
   [bindas_2023.md]: ../projects/bindas_2023.md
+  [liu_2022.md]: ../projects/liu_2022.md
 
   [feng_2023.md]: ../codes/feng_2023.md
   [bindas_2023.md]: ../codes/bindas_2023.md
+  [liu_2022.md]: ../codes/liu_2022.md
   [test.md]: ../codes/test.md
 
