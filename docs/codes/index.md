@@ -22,7 +22,7 @@ See below for coding projects developed by the community that utilize HydroDL
 
     ---
 ![Manning's n recovery against USGS Data](../assets/project-figures/bindas_2023.png){align="left" width="120"}
-A differentiable routing method that mimics the classical Muskingum-Cunge routing model over a river network but embeds an NN to infer parameterizations for Manning’s roughness (_n_). 
+A differentiable routing method that uses Muskingum-Cunge and an NN to infer parameterizations for Manning’s roughness (_n_). 
 
 
   </div>
