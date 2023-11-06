@@ -30,6 +30,18 @@ A differentiable routing method that uses Muskingum-Cunge and an NN to infer par
   </div>
 </div>
 
+<div class="result" markdown>
+  <div class="grid cards" markdown>
+
+-   [diffEcosys __(Aboelyazeed et al. 2023)__][Aboelyazeed_2023.md]
+
+    ---
+
+    A differentiable physics-informed ecosystem model.
+
+
+  </div>
+</div>
 ### LSTM Models
 
 <div class="result" markdown>
