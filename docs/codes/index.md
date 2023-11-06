@@ -43,11 +43,6 @@ A multiscale DL scheme learning simultaneously from satellite and in situ data t
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
-
-
-<div class="result" markdown>
-  <div class="grid cards" markdown>
-
 -   [LSTM for snow water equivalent __(Song et al. 2023)__][Song_SWE_2023.md]
    
     ---
@@ -58,11 +53,8 @@ Time series of the forward model and the models integrating snow water equivalen
 </div>
 
 
-
-
-
-
-
+<div class="result" markdown>
+  <div class="grid cards" markdown>
 
 -   [Test][test.md]
 
@@ -72,13 +64,8 @@ Time series of the forward model and the models integrating snow water equivalen
   </div>
 </div>
 
-  [feng_2023.md]: ../projects/feng_2023.md
-  [bindas_2023.md]: ../projects/bindas_2023.md
-  [liu_2022.md]: ../projects/liu_2022.md
-  [Song_SWE_2023.md]: ../projects/Song_SWE_2023.md
   [feng_2023.md]: ../codes/feng_2023.md
   [bindas_2023.md]: ../codes/bindas_2023.md
   [liu_2022.md]: ../codes/liu_2022.md
   [Song_SWE_2023.md]: ../codes/Song_SWE_2023.md
   [test.md]: ../codes/test.md
-
