@@ -52,6 +52,19 @@ Time series of the forward model and the models integrating snow water equivalen
   </div>
 </div>
 
+<div class="result" markdown>
+  <div class="grid cards" markdown>
+
+-   [LSTM stream temperature model __(Rahmani et al. 2021)__][Rahmani_et_al_2021.md]
+
+    ---
+![Performance of models with observed streamflow, simulated streamflow, no streamflow data, and a locally fitted auto-regressive model](../assets/project-figures/Rahmani_et_al_2021.png){align="left" width="120"}
+CONUS scale aggregated metrics of stream temperature models for the test period. 
+
+
+  </div>
+</div>
+
 
 <div class="result" markdown>
   <div class="grid cards" markdown>
@@ -68,4 +81,5 @@ Time series of the forward model and the models integrating snow water equivalen
   [bindas_2023.md]: ../codes/bindas_2023.md
   [liu_2022.md]: ../codes/liu_2022.md
   [Song_SWE_2023.md]: ../codes/Song_SWE_2023.md
+  [Rahmani_et_al_2021.md]: ../codes/Rahmani_et_al_2021.md
   [test.md]: ../codes/test.md
