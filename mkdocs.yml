@@ -141,6 +141,7 @@ nav:
         - HBV: codes/feng_2023.md
         - Muskingum-Cunge: codes/bindas_2023.md
         - Multiscale: codes/liu_2022.md
+        - Stream-Temperature: codes/Rahmani_et_al_2021.md
         - Test Project: codes/test.md
 
 extra_javascript:
