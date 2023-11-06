@@ -2,6 +2,8 @@
 
 See below for coding projects developed by the community that utilize HydroDL
 
+### Differentiable Models
+
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
@@ -27,6 +29,8 @@ A differentiable routing method that uses Muskingum-Cunge and an NN to infer par
 
   </div>
 </div>
+
+### LSTM Models
 
 <div class="result" markdown>
   <div class="grid cards" markdown>
@@ -65,6 +69,7 @@ CONUS scale aggregated metrics of stream temperature models for the test period.
   </div>
 </div>
 
+### Testing
 
 <div class="result" markdown>
   <div class="grid cards" markdown>
