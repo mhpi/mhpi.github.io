@@ -1,12 +1,13 @@
 # diffEcosys
-![Alt text](https://github.com/mhpi/mhpi.github.io/blob/main/docs/assets/Aboelyazeed_2023.png)
+![Alt text](../assets/project-figures/Aboelyazeed_2023.png)
+
 ## Short Summary
 Photosynthesis is critical for life and has been affected by the changing climate. Many parameters come into play while modeling, but traditional calibration approaches face many issues. Our framework trains coupled neural networks to provide parameters to a photosynthesis model. Using big data, we independently found parameter values that were correlated with those in the literature while giving higher correlation and reduced biases in photosynthesis rates.
 
 ## Code Release
-github version: https://github.com/hydroPKDN/diffEcosys/ 
+github version: [https://github.com/hydroPKDN/diffEcosys/](https://github.com/hydroPKDN/diffEcosys/)
 
-zenodo version: https://zenodo.org/records/8067204
+zenodo version: [https://zenodo.org/records/8067204](https://zenodo.org/records/8067204)
 
 ## Bibtex Citation
 ```bibtex

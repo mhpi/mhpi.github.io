@@ -140,7 +140,9 @@ nav:
         - codes/index.md
         - HBV: codes/feng_2023.md
         - Muskingum-Cunge: codes/bindas_2023.md
+        - diffEcosys: codes/Aboelyazeed_2023.md
         - Multiscale: codes/liu_2022.md
+        - LSTM-SWE: codes/Song_SWE_2023.md
         - Stream-Temperature: codes/Rahmani_et_al_2021.md
         - Test Project: codes/test.md
 

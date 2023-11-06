@@ -1,4 +1,4 @@
-# LSTM Snow Water Equivalent model
+# LSTM for snow water equivalent
 
 ## Code Release
 
