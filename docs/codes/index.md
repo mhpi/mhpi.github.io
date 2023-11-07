@@ -36,7 +36,7 @@ A differentiable routing method that uses Muskingum-Cunge and an NN to infer par
 -   [diffEcosys __(Aboelyazeed_et_al_2023)__][Aboelyazeed_et_al_2023.md]
 
     ---
-![A differentiable physics-informed ecosystem model ](../assets/project-figures/lAboelyazeed_2023.jpg){align="left" width="120"}
+![A differentiable physics-informed ecosystem model](../assets/project-figures/Aboelyazeed_2023.jpg){align="left" width="120"}
 A differentiable physics-informed ecosystem model 
 
 
