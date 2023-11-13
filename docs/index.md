@@ -20,7 +20,7 @@ HydroDL is a coding library designed to model hydrologic systems using neural ne
 
 !!! info
 
-    All models were trained from 1980/10/01 to 1995/09/30 and tested from 1995/10/01 to 2010/09/30 on all 671 CAMELS basins.
+    All models were trained from 1999/10/01 to 2008/09/30 and tested from 1989/10/01 to 1999/09/30 on the subset of 531 CAMELS basins. 
 
 | Model |  Median NSE | Median KGE | Median Absolute FLV (%) | Median Non-Absolute FLV (%) | Median low flow RMSE (mm/day) | Median peak flow RMSE (mm/day) | 
 | --- | --- | --- | --- | --- | --- | --- |
