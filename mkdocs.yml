@@ -125,6 +125,8 @@ markdown_extensions:
 
 nav:
     - HydroDL: index.md
+    - Benchmarks:
+        - benchmarks/index.md
     - Getting started: 
         - Installation: Installation.md
         - Quick Start: Quick_start.md
