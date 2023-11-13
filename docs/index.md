@@ -41,7 +41,8 @@ HydroDL is a coding library designed to model hydrologic systems using neural ne
 | SAC-SMA (Traditional) | 0.66 | 0.73 | 59.40 (46.96) | 17.55 (-9.79) | 0.081 | 3.19 | - | - |
 | Unmodified $\delta$HBV | 0.69 | 0.72 | 47.58 (16.84) | 16.40 (-10.80) | 0.066  | 2.74 | 0.76 | 0.43  |
 | $\delta$HBV  | 0.73 | 0.73 | 56.53 (50.93) | 15.29 (-8.89) | 0.074 | 2.56 | 0.76 | 0.59  |
-| $\delta$HBV.adj | 0.75 | 0.76 | 40.56 (32.78) | 14.09 (-7.97) | 0.045 | 2.59 | 0.87 | 0.62 |
+| $\delta$HBV.adj (expert 1)| 0.72 | 0.75 | 43.29 (37.61) | 13.25 (-4.33) | 0.048 | 2.47 | 0.83 | 0.61 |
+| $\delta$HBV.adj (expert 2)| 0.75 | 0.76 | 40.56 (32.78) | 14.09 (-7.97) | 0.045 | 2.59 | 0.87 | 0.62 |
 
 ### Citations
 
@@ -92,10 +93,20 @@ HydroDL is a coding library designed to model hydrologic systems using neural ne
 === "$\delta$ HBV" 
 
     ``` 
-    Feng, D., Liu, J., Lawson, K. and Shen, C., 2022. Differentiable, learnable, regionalized \
+    Feng, D., Liu, J., Lawson, K. and Shen, C., 2022. Differentiable, learnable, regionalized 
     process‐based models with multiphysical outputs can approach state‐of‐the‐art hydrologic 
     prediction accuracy. Water Resources Research, 58(10), p.e2022WR032404.
     ``` 
+
+=== "$\delta$ HBV.adj" 
+
+    ``` 
+    Song, Yalan, Wouter Knoben, Martyn P. Clark, Dapeng Feng, Kathryn Lawson, and Chaopeng Shen, 
+    When ancient numerical demons meet physics-informed machine learning: adjoint-based gradients 
+    for implicit differentiable modeling.
+    Preprint link: https://hess.copernicus.org/preprints/hess-2023-258/
+    ``` 
+
 
 </div>
 
