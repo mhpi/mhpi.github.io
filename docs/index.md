@@ -16,14 +16,16 @@ HydroDL is a coding library designed to model hydrologic systems using neural ne
 
 ### Metric Tables
 
-#### HydroDL versus Neural Hydrology
+#### HydroDL versus Neural Hydrology 
+(All models were trained from 1980/10/01 to 1995/09/30 and tested from 1995/10/01 to 2010/09/30 on all 671 CAMELS basins.)
 
 | Model |  Median NSE | Median KGE | Median Absolute FLV (%) | Median Non-Absolute FLV (%) | Median low flow RMSE (mm/day) | Median peak flow RMSE (mm/day) | 
 | --- | --- | --- | --- | --- | --- | --- |
 | LSTM (Kratzert et al. 2019) | 0.74 | 0.75 | 32.02 (5.54) | 18.02 (-15.80) | 0.051  | 3.70  |
 | LSTM-hydroDL (high-flow expert) | 0.74 | 0.76 | 31.79 (-9.08) | 16.20 (-13.42) | 0.049 | 3.28 |
 
-#### All HydroDL Models
+#### All HydroDL Models 
+(All Models were trained from 1999/10/01 to 2008/09/30 and tested from 1989/10/01 to 1999/09/30 on subset of 531 CAMELS basins)
 
 | Model |  Median NSE | Median KGE | Median Absolute FLV (%) | Median Non-Absolute FLV (%) | Median low flow RMSE (mm/day) | Median peak flow RMSE (mm/day) | Baseflow index spatial correlation | Median NSE of temporal ET simulation|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
