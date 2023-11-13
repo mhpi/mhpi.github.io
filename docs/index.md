@@ -97,5 +97,14 @@ HydroDL is a coding library designed to model hydrologic systems using neural ne
     prediction accuracy. Water Resources Research, 58(10), p.e2022WR032404.
     ``` 
 
+=== "$\delta$ HBV.adj"
+
+    ```
+    Song, Yalan, Wouter Knoben, Martyn P. Clark, Dapeng Feng, Kathryn Lawson, and Chaopeng 
+    Shen, When ancient numerical demons meet physics-informed machine learning: adjoint-based 
+    gradients for implicit differentiable modeling 
+    Preprint link: https://hess.copernicus.org/preprints/hess-2023-258/ 
+    ```
+
 </div>
 
