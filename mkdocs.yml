@@ -119,6 +119,9 @@ markdown_extensions:
     - def_list
     - pymdownx.tasklist:
           custom_checkbox: true
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+          alternate_style: true
 
 nav:
     - HydroDL: index.md
@@ -144,7 +147,6 @@ nav:
         - Multiscale: codes/liu_2022.md
         - LSTM-SWE: codes/Song_SWE_2023.md
         - Stream-Temperature: codes/Rahmani_et_al_2021.md
-        - Test Project: codes/test.md
 
 extra_javascript:
   # - javascripts/plots.js

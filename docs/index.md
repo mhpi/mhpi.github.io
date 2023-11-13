@@ -18,12 +18,20 @@ HydroDL is a coding library designed to model hydrologic systems using neural ne
 
 #### HydroDL versus Neural Hydrology
 
+!!! info
+
+    All models were trained from 1980/10/01 to 1995/09/30 and tested from 1995/10/01 to 2010/09/30 on all 671 CAMELS basins.
+
 | Model |  Median NSE | Median KGE | Median Absolute FLV (%) | Median Non-Absolute FLV (%) | Median low flow RMSE (mm/day) | Median peak flow RMSE (mm/day) | 
 | --- | --- | --- | --- | --- | --- | --- |
 | LSTM (Kratzert et al. 2019) | 0.74 | 0.75 | 32.02 (5.54) | 18.02 (-15.80) | 0.051  | 3.70  |
 | LSTM-hydroDL (high-flow expert) | 0.74 | 0.76 | 31.79 (-9.08) | 16.20 (-13.42) | 0.049 | 3.28 |
 
 #### All HydroDL Models
+
+!!! info
+
+    All models were trained from 1980/10/01 to 1995/09/30 and tested from 1995/10/01 to 2010/09/30 on all 671 CAMELS basins.
 
 | Model |  Median NSE | Median KGE | Median Absolute FLV (%) | Median Non-Absolute FLV (%) | Median low flow RMSE (mm/day) | Median peak flow RMSE (mm/day) | Baseflow index spatial correlation | Median NSE of temporal ET simulation|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -35,5 +43,59 @@ HydroDL is a coding library designed to model hydrologic systems using neural ne
 | $\delta$HBV  | 0.73 | 0.73 | 56.53 (50.93) | 15.29 (-8.89) | 0.074 | 2.56 | 0.76 | 0.59  |
 | $\delta$HBV.adj | 0.75 | 0.76 | 40.56 (32.78) | 14.09 (-7.97) | 0.045 | 2.59 | 0.87 | 0.62 |
 
-<div id="nse-cdf-plot"></div>
+### Citations
+
+<div class="result" markdown>
+
+=== "LSTM (Kratzert et al. 2019)"  
+
+    ```
+    Kratzert, Frederik, Daniel Klotz, Guy Shalev, Günter Klambauer, Sepp Hochreiter, and Grey 
+    Nearing. "Benchmarking a catchment-aware long short-term memory network (LSTM) for
+    large-scale hydrological modeling." Hydrol. Earth Syst. Sci. Discuss 2019 (2019): 1-32.
+    ``` 
+
+=== "LSTM-hydroDL (low-flow expert)"   
+
+    ```
+    Feng, Dapeng, Kuai Fang, and Chaopeng Shen. "Enhancing streamflow forecast and extracting 
+    insights using long‐short term memory networks with data integration at continental scales.
+    " Water Resources Research 56, no. 9 (2020): e2019WR026793. 
+    ``` 
+
+=== "LSTM-hydroDL (high-flow expert)"    
+
+    ``` 
+    Feng, Dapeng, Kuai Fang, and Chaopeng Shen. "Enhancing streamflow forecast and extracting 
+    insights using long‐short term memory networks with data integration at continental scales.
+    " Water Resources Research 56, no. 9 (2020): e2019WR026793. 
+    ``` 
+
+=== "SAC-SMA (Traditional)"
+
+    ```
+    Newman, Andrew J., Martyn P. Clark, Kevin Sampson, Andrew Wood, Lauren E. Hay, Andy Bock, 
+    Roland J. Viger et al. "Development of a large-sample watershed-scale hydrometeorological 
+    data set for the contiguous USA: data set characteristics and assessment of regional 
+    variability in hydrologic model performance." Hydrology and Earth System Sciences 19, no. 1 
+    (2015): 209-223. 
+    ```
+
+=== "Unmodified $\delta$ HBV" 
+
+    ``` 
+    Feng, D., Liu, J., Lawson, K. and Shen, C., 2022. Differentiable, learnable, regionalized 
+    process‐based models with multiphysical outputs can approach state‐of‐the‐art hydrologic 
+    prediction accuracy. Water Resources Research, 58(10), p.e2022WR032404. 
+    ``` 
+
+=== "$\delta$ HBV" 
+
+    ``` 
+    Feng, D., Liu, J., Lawson, K. and Shen, C., 2022. Differentiable, learnable, regionalized \
+    process‐based models with multiphysical outputs can approach state‐of‐the‐art hydrologic 
+    prediction accuracy. Water Resources Research, 58(10), p.e2022WR032404.
+    ``` 
+
+</div>
 
