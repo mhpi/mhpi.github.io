@@ -17,9 +17,10 @@
 
 | Model |  Median NSE | Median KGE | Median Absolute (Non-Absolute) FLV (%) | Median Absolute (Non-Absolute) FHV (%) | Median low flow RMSE (mm/day) | Median peak flow RMSE (mm/day) | 
 | --- | --- | --- | --- | --- | --- | --- |
-| LSTM (Kratzert et al. 2019) | 0.74 | 0.75 | 32.02 (5.54) | 18.02 (-15.80) | 0.051  | 3.70  |
-| LSTM (Kratzert et al. 2019) As reported | ? | ? | ? | ? | ? | ? |
 | LSTM-hydroDL (high-flow expert) | 0.74 | 0.76 | 31.79 (-9.08) | 16.20 (-13.42) | 0.049 | 3.28 |
+| LSTM ran w/ code in Kratzert et al. (2019) | 0.74 | 0.75 | 32.02 (5.54) | 18.02 (-15.80) | 0.051  | 3.70  |
+| LSTM (Kratzert et al. 2019) As reported | 0.731 (±0.002) | - | - (26.5±7.6) | - (-14.8±1.1) | - | - |
+
 
 ### 15-year training comparison
 
@@ -30,8 +31,8 @@
 | Model |  Median NSE | Median KGE | Median Absolute (Non-Absolute) FLV (%) | Median Absolute (Non-Absolute) FHV (%) | Median low flow RMSE (mm/day) | Median peak flow RMSE (mm/day) | Baseflow index spatial correlation | Median NSE of temporal ET simulation|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | LSTM-hydroDL (low-flow expert) | 0.75 | 0.75 | 20.01 (15.39) | 17.01 (-3.47) | 0.025 | 3.10  | - | - |
-| LSTM-hydroDL (high-flow expert) | 0.75 | 0.78 | 44.88 | 14.13 | 0.059 | 2.51 | - | - |
-| LSTM (Kratzert et al. 2019’s code) | 0.73 | 0.77 | 40.59 (29.70) | 13.46  (-4.19) | 0.055  | 2.56  | - | - |
+| LSTM-hydroDL (high-flow expert) | 0.75 | 0.78 | 44.88 (29.44) | 14.13 (-6.19)| 0.059 | 2.51 | - | - |
+| LSTM ran w/ code in Kratzert et al. (2019) | 0.73 | 0.77 | 40.59 (29.70) | 13.46  (-4.19) | 0.055  | 2.56  | - | - |
 | SAC-SMA (Traditional) | 0.66 | 0.73 | 59.40 (46.96) | 17.55 (-9.79) | 0.081 | 3.19 | - | - |
 | Unmodified $\delta$HBV | 0.69 | 0.72 | 47.58 (16.84) | 16.40 (-10.80) | 0.066  | 2.74 | 0.76 | 0.43  |
 | $\delta$HBV  | 0.73 | 0.73 | 56.53 (50.93) | 15.29 (-8.89) | 0.074 | 2.56 | 0.76 | 0.59  |
@@ -54,9 +55,7 @@
 === "LSTM-hydroDL (high-flow expert)"    
 
     ``` 
-    Feng, Dapeng, Kuai Fang, and Chaopeng Shen. "Enhancing streamflow forecast and extracting 
-    insights using long‐short term memory networks with data integration at continental scales.
-    " Water Resources Research 56, no. 9 (2020): e2019WR026793. 
+    Github link:
     ``` 
     
 === "LSTM (Kratzert et al. 2019)"  
