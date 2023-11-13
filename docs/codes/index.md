@@ -82,23 +82,9 @@ CONUS scale aggregated metrics of stream temperature models for the test period.
   </div>
 </div>
 
-### Testing
-
-<div class="result" markdown>
-  <div class="grid cards" markdown>
-
--   [Test][test.md]
-
-    ---
-
-    Testing the project cards
-  </div>
-</div>
-
   [feng_2023.md]: ../codes/feng_2023.md
   [bindas_2023.md]: ../codes/bindas_2023.md
   [liu_2022.md]: ../codes/liu_2022.md
   [Song_SWE_2023.md]: ../codes/Song_SWE_2023.md
   [Rahmani_et_al_2021.md]: ../codes/Rahmani_et_al_2021.md
   [Aboelyazeed_et_al_2023.md]: ../codes/Aboelyazeed_2023.md
-  [test.md]: ../codes/test.md
