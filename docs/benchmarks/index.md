@@ -4,8 +4,9 @@
 
 <figure markdown>
   ![CDF](../assets/images/CDF_NSE_adjoint.png){width="750"}
-  <figcaption>Camels NSE of popular streamflow models</figcaption>
+  <figcaption>Camels NSE of popular streamflow models (single, without ensemble) wth 15-year training. This is a temporal test (trained on ). We compared 3 versions of differentiable HBV model ("Unmodified"-- without any structural update; $\delta$HBV -- a sequential differentiable HBV published in Feng et al., 2022; and $\delta$HBV.adjoint, slightly modified from Song et al., 2023. See refs below) with two versions of hydroDL implementation (a high-flow expert and a low-flow expert). We also trained the LSTM from Kratzert 2019 for comparison.  </figcaption>
 </figure>
+    We will gradually add our benchmarks here. We recently updated our LSTM, and you can find the high-flow expert on hydroDL repo's tutorial (see Codes tab on this website). The first and forecast benchmark is over the CAMELS dataset. The results can vary slightly due to training/test periods. Below you will find results for 10-year training (exactly as reported in Kratzert et al., 2019) and 15-year training (shown in this Figure). Besides NSE and KGE, we also report absolute FHV and FLV (these metrics have + or - signs, and they make more sense after taking the absolute sign) and low-flow and high-flow RMSE. So far, the best LSTM is LSTM-hydroDL (high-flow expert) and the best differentiable model is $\delta$HBV.adjoint (https://hess.copernicus.org/preprints/hess-2023-258/). As time goes on, we will also report benchmarks on the global dataset and other papers. We also know that spatial test (trained on some basins, tested on some other basins) or prediction in ungauged regions (PUR) tests (tested in a large region without training data) are more stringent tests and will likely change the comparisons. We previously found differentiable model to perform better in the PUR test (Feng et al., 2023 https://doi.org/10.5194/hess-27-2357-2023).
 
 ## Metric Tables
 
