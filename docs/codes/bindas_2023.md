@@ -2,15 +2,26 @@
 
 !!! info
 
-    This paper is currently in preprint
+    This paper is currently in preprint and is under review
 
 ## Code Release
 
-I will eventually release the code...
+Below are Zenodo releases for:
 
-## Results
+- [Code](https://zenodo.org/records/10183449)
+- [Dataset](https://zenodo.org/records/10183449)
 
-Will be released upon publication
+The code is released on Github [here](https://github.com/mhpi/dMC-Juniata-hydroDL2)
+
+## Summary
+
+A novel differentiable modeling framework to perform routing and to learn a “parameterization scheme” (a systematic way of inferring parameters from more rudimentary information) for routing flows on the river network.
+
+Below are the main points from our paper:
+
+- A novel differentiable routing model can learn effective river routing parameterization, recovering channel roughness in synthetic runs.
+- With short periods of real training data, we can improve streamflow in large rivers compared to models not considering routing.
+- For basins >2,000 km2, our framework outperformed deep learning models that assume homogeneity, despite bias in the runoff forcings.
 
 ## Bibtex Citation
 
