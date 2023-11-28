@@ -7,11 +7,11 @@ See below for coding projects developed by the community that utilize HydroDL
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
--   [$\delta$ HBV-globe1.0-hydroDL __(Feng et al. 2023)__][feng_2023.md]
+-   [$\delta$ HBV-hydroDL __(Feng et al., 2022,2023)__][feng_2023.md]
 
     ---
 
-    A differentiable implementation of the HBV Streamflow Model.
+    Differentiable hydrologic models using HBV model as a physical backbone.
 
 
   </div>
