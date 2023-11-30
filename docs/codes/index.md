@@ -10,8 +10,8 @@ See below for coding projects developed by the community that utilize HydroDL
 -   [$\delta$ HBV-hydroDL __(Feng et al., 2022,2023)__][feng_2023.md]
 
     ---
-
-    Differentiable hydrologic models using HBV model as a physical backbone.
+![Differentiable hydrologic model framework](../assets/project-figures/diffHBV.png){align="left" width="120"}
+Differentiable hydrologic models using HBV model as a physical backbone.
 
 
   </div>
