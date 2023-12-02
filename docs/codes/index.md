@@ -48,6 +48,15 @@ A differentiable physics-informed ecosystem model
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
+-   [Updated, simplified LSTM tutorial for CAMELS streamflow] [[https://bit.ly/47KqJHK](https://bit.ly/47KqJHK)]
+We greatly simplified the interface, making it easy to reuse this code on your data. Thanks to Yalan Song and Kamlesh Sawadekar. 
+
+
+  </div>
+</div>
+<div class="result" markdown>
+  <div class="grid cards" markdown>
+
 -   [Multiscale __(Liu et al. 2022)__][liu_2022.md]
 
     --- 
