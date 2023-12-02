@@ -48,8 +48,10 @@ A differentiable physics-informed ecosystem model
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
--   [Updated, simplified LSTM tutorial for CAMELS streamflow] [[https://bit.ly/47KqJHK](https://bit.ly/47KqJHK)]
-We greatly simplified the interface, making it easy to reuse this code on your data. Thanks to Yalan Song and Kamlesh Sawadekar. 
+-   [Updated, simplified __LSTM tutorial__ for CAMELS streamflow] [tutorial]
+  
+    --- 
+This notebook is the "high-flow expert" listed on the benchmark page. We greatly simplified the LSTM interface, making it easy to reuse this code on your data. This is the interface to use when you get started in learning our code. Thanks to Yalan Song, Kamlesh Sawadekar and Dapeng Feng. Note that different pytorch versions could lead to slightly different performances.
 
 
   </div>
@@ -92,6 +94,7 @@ CONUS scale aggregated metrics of stream temperature models for the test period.
 </div>
 
   [feng_2023.md]: ../codes/feng_2023.md
+  [tutorial]: https://bit.ly/47KqJHK
   [bindas_2023.md]: ../codes/bindas_2023.md
   [liu_2022.md]: ../codes/liu_2022.md
   [Song_SWE_2023.md]: ../codes/Song_SWE_2023.md
