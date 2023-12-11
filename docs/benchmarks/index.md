@@ -20,8 +20,10 @@ We will gradually add our benchmarks here. We recently updated our LSTM, and you
 
 | Model |  Median NSE | Median KGE | Median Absolute (Non-Absolute) FLV (%) | Median Absolute (Non-Absolute) FHV (%) | Median low flow RMSE (mm/day) | Median peak flow RMSE (mm/day) | 
 | --- | --- | --- | --- | --- | --- | --- |
-| LSTM-hydroDL-Ensemble (high-flow expert) | 0.76 | 0.77 | 28.84 (-3.88) | 16.21 (-13.38) | 0.046 | 3.27 |
-| LSTM ran w/ code in Kratzert et al. (2019) | 0.74 | 0.75 | 32.02 (5.54) | 18.02 (-15.80) | 0.051  | 3.70  |
+| LSTM-hydroDL-single (high-flow expert) | 0.74 | 0.76 | 31.79 (-9.08) | 16.20 (-13.42) | 0.049 | 3.28 |
+| LSTM-hydroDL-Ensemble (high-flow expert) | 0.765 | 0.77 | 28.84 (-3.88) | 16.21 (-13.38) | 0.046 | 3.27 |
+| LSTM-single ran w/ code in Kratzert et al. (2019) | 0.74 | 0.75 | 32.02 (5.54) | 18.02 (-15.80) | 0.051  | 3.70  |
+| LSTM-single (Kratzert et al. 2019) As reported | 0.731 | - | - (26.5) | - (-14.8) | - | - |
 | LSTM-Ensemble (Kratzert et al. 2019) As reported | 0.758 | - | - (55.1) | - (-15.7) | - | - |
 
 
