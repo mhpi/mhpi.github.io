@@ -20,9 +20,9 @@ We will gradually add our benchmarks here. We recently updated our LSTM, and you
 
 | Model |  Median NSE | Median KGE | Median Absolute (Non-Absolute) FLV (%) | Median Absolute (Non-Absolute) FHV (%) | Median low flow RMSE (mm/day) | Median peak flow RMSE (mm/day) | 
 | --- | --- | --- | --- | --- | --- | --- |
-| LSTM-hydroDL (high-flow expert) | 0.74 | 0.76 | 31.79 (-9.08) | 16.20 (-13.42) | 0.049 | 3.28 |
+| LSTM-hydroDL-Ensemble (high-flow expert) | 0.76 | 0.77 | 28.84 (-3.88) | 16.21 (-13.38) | 0.046 | 3.27 |
 | LSTM ran w/ code in Kratzert et al. (2019) | 0.74 | 0.75 | 32.02 (5.54) | 18.02 (-15.80) | 0.051  | 3.70  |
-| LSTM (Kratzert et al. 2019) As reported | 0.731 (±0.002) | - | - (26.5±7.6) | - (-14.8±1.1) | - | - |
+| LSTM-Ensemble (Kratzert et al. 2019) As reported | 0.758 | - | - (55.1) | - (-15.7) | - | - |
 
 
 ### 15-year training comparison
@@ -33,8 +33,8 @@ We will gradually add our benchmarks here. We recently updated our LSTM, and you
 
 | Model |  Median NSE | Median KGE | Median Absolute (Non-Absolute) FLV (%) | Median Absolute (Non-Absolute) FHV (%) | Median low flow RMSE (mm/day) | Median peak flow RMSE (mm/day) | Baseflow index spatial correlation | Median NSE of temporal ET simulation|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| LSTM-hydroDL (low-flow expert) | 0.75 | 0.75 | 20.01 (15.39) | 17.01 (-3.47) | 0.025 | 3.10  | - | - |
-| LSTM-hydroDL (high-flow expert) | 0.75 | 0.78 | 44.88 (29.44) | 14.13 (-6.19)| 0.059 | 2.51 | - | - |
+| LSTM-hydroDL (low-flow expert) | 0.73 | 0.76 | 19.52 (12.21) | 15.01 (-4.12) | 0.023 | 2.67  | - | - |
+| LSTM-hydroDL (high-flow expert) | 0.74 | 0.78 | 37.33 (-20.72) | 13.68 (-4.30)| 0.048 | 2.49 | - | - |
 | LSTM ran w/ code in Kratzert et al. (2019) | 0.73 | 0.77 | 40.59 (29.70) | 13.46  (-4.19) | 0.055  | 2.56  | - | - |
 | SAC-SMA (Traditional) | 0.66 | 0.73 | 59.40 (46.96) | 17.55 (-9.79) | 0.081 | 3.19 | - | - |
 | Unmodified $\delta$HBV | 0.69 | 0.72 | 47.58 (16.84) | 16.40 (-10.80) | 0.066  | 2.74 | 0.76 | 0.43  |
