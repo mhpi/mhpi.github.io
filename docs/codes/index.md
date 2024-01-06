@@ -48,10 +48,21 @@ A differentiable physics-informed ecosystem model
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
--   [Updated, simplified __LSTM tutorial__ for CAMELS streamflow] [tutorial]
+-   [Starting point: Quick __LSTM tutorial__ on soil moisture prediction] [tutorial1]
   
     --- 
-This notebook is the "high-flow expert" listed on the benchmark page. We greatly simplified the LSTM interface, making it easy to reuse this code on your data. This is the interface to use when you get started in learning our code. Thanks to Yalan Song, Kamlesh Sawadekar and Dapeng Feng. Note that different pytorch versions could lead to slightly different performances.
+This notebook is the starting point for new people to learn hydrologic time series prediction using deep neural networks. You can see how CudnnLSTMmodel and CpuLSTM models are trained and how data are formatted. Dataset is embedded in the hydroDL library so it is easy to run the example.
+
+
+  </div>
+</div>
+<div class="result" markdown>
+  <div class="grid cards" markdown>
+
+-   [Updated, simplified __LSTM tutorial__ for CAMELS streamflow] [tutorial2]
+  
+    --- 
+This notebook is the "high-flow expert" listed on the benchmark page. We greatly simplified the LSTM interface, making it easy to reuse this code on your data. This is slightly more involved than the soil moisture tutorial as we are dealing with a larger and more complex dataset. Thanks to Yalan Song, Kamlesh Sawadekar and Dapeng Feng. Note that different pytorch versions could lead to slightly different performances. 
 
 
   </div>
@@ -94,7 +105,8 @@ CONUS scale aggregated metrics of stream temperature models for the test period.
 </div>
 
   [feng_2023.md]: ../codes/feng_2023.md
-  [tutorial]: https://bit.ly/47KqJHK
+  [tutorial1]: https://colab.research.google.com/drive/1C4LIgMcqef3WxEd8TosLXP6tGD-CAXsJ
+  [tutorial2]: https://bit.ly/47KqJHK
   [bindas_2023.md]: ../codes/bindas_2023.md
   [liu_2022.md]: ../codes/liu_2022.md
   [Song_SWE_2023.md]: ../codes/Song_SWE_2023.md
