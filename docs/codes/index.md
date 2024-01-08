@@ -20,10 +20,10 @@ Differentiable hydrologic models using HBV model as a physical backbone.
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
--   [$\delta$ MC-Juniata-hydroDL2 __(Bindas et al. 2023)__][bindas_2023.md]
+-   [$\delta$ MC-Juniata-hydroDL2 __(Bindas et al. 2024)__][bindas_2023.md]
 
     ---
-![Manning's n recovery against USGS Data](../assets/project-figures/bindas_2023.png){align="left" width="120"}
+![Manning's n recovery against USGS Data](../assets/project-figures/wrcr27009-fig-0001-m.jpg){align="left" width="120"}
 A differentiable routing method that uses Muskingum-Cunge and an NN to infer parameterizations for Manning’s roughness (_n_). 
 
 
