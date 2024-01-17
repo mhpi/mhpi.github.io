@@ -2,9 +2,9 @@
 
 [![PyPI](https://img.shields.io/pypi/v/hydroDL?color=blue)](https://pypi.org/project/hydroDL/)  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3993880.svg)](https://doi.org/10.5281/zenodo.3993880) [![CodeStyle](https://img.shields.io/badge/code%20style-Black-black)]()
 
-HydroDL is a coding library designed to model hydrologic systems using two classes of models: (1) purely data-driven neural networks and (2) hybrid, physics-informed differentiable ($\delta$) models. Applications range from soil moisture to streamflow to water quality and ecosystem. Through this portal, we collect all of our published models so you can navigate through them easily.
+HydroDL is a coding library designed to model hydrologic systems using two classes of models: (1) purely data-driven neural networks and (2) hybrid, physics-informed differentiable ($\delta$) models. Applications range from soil moisture to streamflow to water quality and ecosystem. Through this portal, we collect all of our published models so you can navigate through them easily. These codes are developed by the Multiscale Hydrology, Processes and Intelligence (MHPI) group headed by Dr. Chaopeng Shen, faculty member at Penn State Univ (http://water.engr.psu.edu/shen). Codes are contributed by the whole MHPI team (https://sites.google.com/view/mhpi/team).
 
-These classes each has its own advantages. Purely data-driven models are great because they are:
+The two model classes each have their own advantages. Purely data-driven models are great because they are:
 (i) easy to train and run at scale.  
 (ii) automatically adaptable to predictable errors in forcings  
 (iii) highly efficient in computation.  
