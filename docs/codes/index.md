@@ -112,3 +112,4 @@ CONUS scale aggregated metrics of stream temperature models for the test period.
   [Song_SWE_2023.md]: ../codes/Song_SWE_2023.md
   [Rahmani_et_al_2021.md]: ../codes/Rahmani_et_al_2021.md
   [Aboelyazeed_et_al_2023.md]: ../codes/Aboelyazeed_2023.md
+  [Tsai_et_al_2021.md]: ../codes/Tsai_2021.md
