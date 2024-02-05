@@ -43,6 +43,18 @@ A differentiable physics-informed ecosystem model
   </div>
 </div>
 
+<div class="result" markdown>
+  <div class="grid cards" markdown>
+
+-   [$\delta$ parameter learning __(Tsai_et_al_2021)__][Tsai_et_al_2021.md]
+
+    ---
+![Differentiable Parameter Learning](../assets/project-figures/Tsai_etal2021.png){align="left" width="120"}
+Differentiable Parameter Learning
+
+
+  </div>
+</div>
 ### LSTM Models
 
 <div class="result" markdown>
