@@ -1,5 +1,5 @@
 # $\delta$ differentiable stream temperature (LSTM $\Plus$ SNTEMP)
-![Alt text](../assets/project-figures/Fig5_Rahmani2023.png)
+![Alt text](../assets/project-figures/Fig5_Rahmani2023.PNG)
 
 ## Code, data, models, and results Release
 
