@@ -21,10 +21,9 @@ A differentiable routing method that uses Muskingum-Cunge and an NN to infer par
   <div class="grid cards" markdown>
 
 -   [$\delta$ differentiable stream temperature (LSTM + SNTEMP) __(Rahmani et al. 2023)__][Rahmani_et_al_2023.md]
-   
+
     ---
-![Scatterplots comparing baseflow ratio predicted by four models with different structural priors](../assets/project-figures/Fig5_Rahmani2023.png)
-{align="left" width="120"}
+![comparing Pearson correlation for baseflow ratio estimations](../assets/project-figures/Fig5_Rahmani2023.PNG){align="left" width="120"}
 CONUS scale pearson correlation between baseflow estimation of our model and GAGES-II estimates of baseflow.
 
   </div>
@@ -117,8 +116,8 @@ Time series of the forward model and the models integrating snow water equivalen
 -   [LSTM stream temperature model __(Rahmani et al. 2021)__][Rahmani_et_al_2021.md]
    
     ---
-![Performance of models with observed streamflow, simulated streamflow, no streamflow data, and a locally fitted auto-regressive model](../assets/project-figures/Rahmani_et_al_2021.png){align="left" width="120"}
-CONUS scale aggregated metrics of stream temperature models for the test period.
+![Temperature performance with and without streamflow](../assets/project-figures/Rahmani_et_al_2021.PNG){align="left" width="120"}
+CONUS scale aggregated metrics of stream temperature models for the testing time range considering observed, simulated, and no streamflow data among inputs,with a locally fitted auto-regressive model
 
   </div>
 </div>
