@@ -4,18 +4,6 @@ See below for coding projects developed by the community that utilize HydroDL
 
 ### Differentiable Models
 
-<div class="result" markdown>
-  <div class="grid cards" markdown>
-
--   [$\delta$ HBV-hydroDL __(Feng et al., 2022,2023)__][feng_2023.md]
-
-    ---
-![Differentiable hydrologic model framework](../assets/project-figures/diffHBV.png){align="left" width="120"}
-Differentiable hydrologic models using HBV model as a physical backbone.
-
-
-  </div>
-</div>
 
 <div class="result" markdown>
   <div class="grid cards" markdown>
@@ -29,6 +17,18 @@ A differentiable routing method that uses Muskingum-Cunge and an NN to infer par
 
   </div>
 </div>
+<div class="result" markdown>
+  <div class="grid cards" markdown>
+
+-   [$\delta$ differentiable stream temperature (LSTM $\Plus$ SNTEMP) __(Rahmani et al. 2023)__][Rahmani_et_al_2023.md]
+   
+    ---
+![Scatterplots comparing baseflow ratio predicted by four models with different structural priors](../assets/project-figures/Fig5_Rahmani2023.png)
+{align="left" width="120"}
+CONUS scale pearson correlation between baseflow estimation of our model and GAGES-II estimates of baseflow.
+
+  </div>
+</div>
 
 <div class="result" markdown>
   <div class="grid cards" markdown>
@@ -39,6 +39,16 @@ A differentiable routing method that uses Muskingum-Cunge and an NN to infer par
 ![A differentiable physics-informed ecosystem model](../assets/project-figures/Aboelyazeed_2023.png){align="left" width="120"}
 A differentiable physics-informed ecosystem model 
 
+  </div>
+</div>
+<div class="result" markdown>
+  <div class="grid cards" markdown>
+
+-   [$\delta$ HBV-hydroDL __(Feng et al., 2022,2023)__][feng_2023.md]
+
+    ---
+![Differentiable hydrologic model framework](../assets/project-figures/diffHBV.png){align="left" width="120"}
+Differentiable hydrologic models using HBV model as a physical backbone.
 
   </div>
 </div>
@@ -51,18 +61,6 @@ A differentiable physics-informed ecosystem model
     ---
 ![Differentiable Parameter Learning](../assets/project-figures/Tsai_etal2021.png){align="left" width="120"}
 Differentiable Parameter Learning
-
-  </div>
-</div>
-<div class="result" markdown>
-  <div class="grid cards" markdown>
-
--   [$\delta$ differentiable stream temperature (LSTM $\Plus$ SNTEMP) __(Rahmani et al. 2023)__][Rahmani_et_al_2023.md]
-   
-    ---
-![Scatterplots comparing baseflow ratio predicted by four models with different structural priors](../assets/project-figures/Fig5_Rahmani2023.png)
-{align="left" width="120"}
-CONUS scale pearson correlation between baseflow estimation of our model and GAGES-II estimates of baseflow.
 
   </div>
 </div>
