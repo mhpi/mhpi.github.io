@@ -109,9 +109,20 @@ Time series of the forward model and the models integrating snow water equivalen
 -   [LSTM stream temperature model __(Rahmani et al. 2021)__][Rahmani_et_al_2021.md]
 
     ---
-![Performance of models with observed streamflow, simulated streamflow, no streamflow data, and a locally fitted auto-regressive model](../assets/project-figures/Rahmani_et_al_2021.PNG){align="left" width="120"}
+![Performance of models with observed streamflow, simulated streamflow, no streamflow data, and a locally fitted auto-regressive model](../assets/project-figures/Rahmani_et_al_2021.PNG){align="left" width="140"}
 CONUS scale aggregated metrics of stream temperature models for the test period. 
 
+  </div>
+</div>
+
+<div class="result" markdown>
+  <div class="grid cards" markdown>
+
+-   [$\delta$ differentiable stream temperature (LSTM+SNTEMP) __(Rahmani et al. 2023)__][Rahmani_et_al_2023.md]
+
+    ---
+![Scatterplots comparing baseflow ratio predicted by four models with different structural priors](../assets/project-figures/Fig5_Rahmani2023.jpg){align="left" width="150"}
+CONUS scale pearson correlation between baseflow estimation of our model and GAGES-II estimates of baseflow.
 
   </div>
 </div>
@@ -125,3 +136,5 @@ CONUS scale aggregated metrics of stream temperature models for the test period.
   [Rahmani_et_al_2021.md]: ../codes/Rahmani_et_al_2021.md
   [Aboelyazeed_et_al_2023.md]: ../codes/Aboelyazeed_2023.md
   [Tsai_et_al_2021.md]: ../codes/Tsai_2021.md
+  [Rahmani_et_al_2023.md]: ../codes/Rahmani_et_al_2023.md
+

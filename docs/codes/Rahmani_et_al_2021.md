@@ -1,5 +1,5 @@
 # LSTM stream temperature model
-
+![Alt text](../assets/project-figuresRahmani_et_al_2021.png)
 ## Code Release
 
 [See here for the USGS release](https://doi.org/10.5066/P97CGHZH)
