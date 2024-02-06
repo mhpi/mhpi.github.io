@@ -57,7 +57,7 @@ Differentiable Parameter Learning
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
--   [$\delta$ differentiable stream temperature (LSTM+SNTEMP) __(Rahmani et al. 2023)__][Rahmani_et_al_2023.md]
+-   [$\delta$ differentiable stream temperature (LSTM $\Plus$ SNTEMP) __(Rahmani et al. 2023)__][Rahmani_et_al_2023.md]
    
     ---
 ![Scatterplots comparing baseflow ratio predicted by four models with different structural priors](../assets/project-figures/Fig5_Rahmani2023.png)
