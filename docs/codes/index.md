@@ -4,7 +4,6 @@ See below for coding projects developed by the community that utilize HydroDL
 
 ### Differentiable Models
 
-
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
@@ -12,7 +11,7 @@ See below for coding projects developed by the community that utilize HydroDL
 
     ---
 ![Manning's n recovery against USGS Data](../assets/project-figures/wrcr27009-fig-0001-m.jpg){align="left" width="120"}
-A differentiable routing method that uses Muskingum-Cunge and an NN to infer parameterizations for Manning’s roughness (_n_). 
+A differentiable routing method that uses Muskingum-Cunge and an NN to infer parameterizations for Manning’s roughness
 
 
   </div>

@@ -1,4 +1,5 @@
 # $\delta$ MC-Juniata-hydroDL2
+![Alt text](../assets/project-figures/wrcr27009-fig-0001-m.jpg)
 
 ## Code Release
 
