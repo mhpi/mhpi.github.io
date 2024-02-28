@@ -108,7 +108,7 @@ We will gradually add our benchmarks here. We recently updated our LSTM, and you
 </div>
 
 ## Comparison with National Water Models
-Funded by CIROH projects, we have produced initial comparisons at the continental scale showing the superior performance of the differentiable models compared to both NOAA’s first-generation WRF-Hydro.NWM Model, version 1.2 (Tijerina‐Kreuzer et al., 2021) and version 2.1 (Cosgrove et al., 2024). The differentiable routing model developed in our FY22 CIROH project is used for runoff routing using Muskingum-Cunge method. We are currently working on improving the runoff, forcing, and routing of the products. Several updates are pending. Please stand by for a data release!
+Funded by CIROH projects, we have produced initial comparisons at the continental scale showing the superior performance of the differentiable models compared to both NOAA’s first-generation WRF-Hydro.NWM Model, version 1.2 (Tijerina‐Kreuzer et al., 2021) and version 2.1 (Cosgrove et al., 2024). The differentiable routing model developed in our FY22 CIROH project is used for runoff routing using Muskingum-Cunge method. We are improving runoff, forcing, and routing aspects of the product. Several updates are incoming. Please stand by for a data release!
 
 <figure markdown>
   ![NWM1.2](../assets/images/NVM1.2.png){width="750"}
