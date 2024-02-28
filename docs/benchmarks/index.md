@@ -105,5 +105,17 @@ We will gradually add our benchmarks here. We recently updated our LSTM, and you
     gradients for implicit differentiable modeling 
     Preprint link: https://hess.copernicus.org/preprints/hess-2023-258/ 
     ```
+## Comparison with National Water Models
+Funded by CIROH projects, we have produced initial comparisons at the continental scale showing the superior performance of the differentiable models compared to both NOAA’s first-generation WRF-Hydro.NWM Model, version 1.2 (Tijerina‐Kreuzer et al., 2021) and version 2.1 (Cosgrove et al., 2024). The differentiable routing model developed in our FY22 CIROH project is used for runoff routing using Muskingum-Cunge method.
+
+<figure markdown>
+  ![NWM1.2](../assets/images/NWM1.2.png){width="750"}
+  <figcaption>Condon diagrams comparing streamflow performance for $\delta$HBV -- differentiable HBV and National Water Model, version 1.2. The $\delta$HBV is trained from 10/1980 to 09/1995 and tested from 01/1981 to 12/2019. NWM Model, version 1.2 is uncalibrated and tested from 10/1984 to 09/1985 (reprinted from Tijerina‐Kreuzer et al., 2021)  </figcaption>
+</figure>
+
+<figure markdown>
+  ![NWM2.1](../assets/images/NWM2.1.png){width="750"}
+  <figcaption>Streamflow normalized Nash Sutcliffe Efficiency (NNSE) and correlation comparison between $\delta$HBV -- differentiable HBV and NWM Model, version 2.1. The $\delta$HBV is trained from 10/1980 to 09/1995 and tested from 01/1981 to 12/2019. NWM Model, version 2.1 is calibrated from 10/2008 to 09/2013 and tested from 10/2013 to 09/2016 (reprinted from Cosgrove et al., 2024). </figcaption>
+</figure>
 
 </div>
