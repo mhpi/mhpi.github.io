@@ -62,6 +62,21 @@ Differentiable Parameter Learning
 
   </div>
 </div>
+
+### Differentiable Models
+<div class="result" markdown>
+  <div class="grid cards" markdown>
+
+-   [Updated, simplified __$\delta$HBV tutorial__ for CAMELS streamflow] [tutorialdHBV]
+  
+    --- 
+This notebook is a simplified $\delta$HBV code tutorial for CAMELS streamflow. Thanks to Yalan Song and Dapeng Feng. Note that different pytorch versions could lead to slightly different performances. 
+
+
+  </div>
+</div>
+
+
 ### LSTM Models
 
 <div class="result" markdown>
@@ -75,6 +90,9 @@ This notebook is the starting point for new people to learn hydrologic time seri
 
   </div>
 </div>
+
+
+
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
@@ -122,6 +140,7 @@ CONUS scale aggregated metrics of stream temperature models for the testing time
 </div>
 
   [feng_2023.md]: ../codes/feng_2023.md
+  [tutorialdHBV]: https://colab.research.google.com/drive/12sGKg-hy0o2s_2T8-9Yg47kZuliDvD1x#scrollTo=2ZJZDSlqrpFw
   [tutorial1]: https://colab.research.google.com/drive/1C4LIgMcqef3WxEd8TosLXP6tGD-CAXsJ
   [tutorial2]: https://bit.ly/47KqJHK
   [bindas_2023.md]: ../codes/bindas_2023.md
