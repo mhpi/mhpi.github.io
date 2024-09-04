@@ -150,7 +150,7 @@ nav:
         - LSTM-SWE: codes/Song_SWE_2023.md
         - Stream-Temperature: codes/Rahmani_et_al_2021.md
         - diff-Stream-Temperature: codes/Rahmani_et_al_2023.md
-
+        - Transformer: codes/liu_2024.md
 
 extra_javascript:
   # - javascripts/plots.js
