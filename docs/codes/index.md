@@ -104,6 +104,7 @@ This notebook is the "high-flow expert" listed on the benchmark page. We greatly
 
   </div>
 </div>
+
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
@@ -139,6 +140,20 @@ CONUS scale aggregated metrics of stream temperature models for the testing time
   </div>
 </div>
 
+### Transformer Models
+
+<div class="result" markdown>
+  <div class="grid cards" markdown>
+
+-   [Transformer __(Liu et al. 2024)__][liu_2024.md]
+
+    --- 
+![Transformer_model](../assets/project-figures/liu_2024.jpg){align="left" width="120"}
+First time Transformer achieved the same performance as LSTM on CAMELS dataset; LSTMs and Transformers are likely nearing the prediction limits of the dataset.
+
+  </div>
+</div>
+
   [feng_2023.md]: ../codes/feng_2023.md
   [tutorialdHBV]: https://colab.research.google.com/drive/12sGKg-hy0o2s_2T8-9Yg47kZuliDvD1x#scrollTo=2ZJZDSlqrpFw
   [tutorial1]: https://colab.research.google.com/drive/1C4LIgMcqef3WxEd8TosLXP6tGD-CAXsJ
@@ -150,4 +165,5 @@ CONUS scale aggregated metrics of stream temperature models for the testing time
   [Aboelyazeed_et_al_2023.md]: ../codes/Aboelyazeed_2023.md
   [Tsai_et_al_2021.md]: ../codes/Tsai_2021.md
   [Rahmani_et_al_2023.md]: ../codes/Rahmani_et_al_2023.md
+  [liu_2024.md]: ../codes/liu_2024.md
 
