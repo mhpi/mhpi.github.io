@@ -16,6 +16,17 @@ A differentiable routing method that uses Muskingum-Cunge and an NN to infer par
 
   </div>
 </div>
+
+<div class="result" markdown>
+  <div class="grid cards" markdown>
+
+-   [$\delta$ MG + hydroDL2 __(Lonzarich et al. 2024)__][lonzarich_et_al_2024.md]
+
+    ---
+A generic, scalable differentiable modeling framework on PyTorch for integrating neural networks with physical models.
+  </div>
+</div>
+
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
