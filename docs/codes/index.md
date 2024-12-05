@@ -63,7 +63,7 @@ Differentiable Parameter Learning
   </div>
 </div>
 
-### Differentiable Models
+
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
