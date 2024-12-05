@@ -151,6 +151,9 @@ nav:
         - Stream-Temperature: codes/Rahmani_et_al_2021.md
         - diff-Stream-Temperature: codes/Rahmani_et_al_2023.md
         - Transformer: codes/liu_2024.md
+    - Frameworks:
+        - Frameworks/index.md
+    
 
 extra_javascript:
   # - javascripts/plots.js
