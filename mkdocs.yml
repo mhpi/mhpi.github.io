@@ -153,6 +153,7 @@ nav:
         - Transformer: codes/liu_2024.md
     - Frameworks:
         - Frameworks/index.md
+        - generic_deltaModel : Frameworks/Leo_2024.md
     
 
 extra_javascript:
