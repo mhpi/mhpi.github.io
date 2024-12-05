@@ -23,7 +23,7 @@ A differentiable routing method that uses Muskingum-Cunge and an NN to infer par
 -   [$\delta$ MG + hydroDL2 __(Lonzarich et al. 2024)__][lonzarich_et_al_2024.md]
 
     ---
-A generic, scalable differentiable modeling framework on PyTorch for integrating neural networks with physical models.
+A second-generation generic, scalable differentiable modeling framework on PyTorch for integrating neural networks with physical models. Coupled with HydroDL2, dMG enables the hydrologic modeling like HydroDL while greatly expanding the range of applications and capabilities.
   </div>
 </div>
 
