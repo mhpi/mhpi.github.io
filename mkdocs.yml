@@ -125,8 +125,9 @@ markdown_extensions:
 
 nav:
     - HydroDL: index.md
-    - dMG: dmg/index.md
-        - dMG: codes/lonzarich_2024.md
+    - dMG:
+        - codes/lonzarich_2024.md
+        - dMG: dmg/index.md
     - Benchmarks:
         - benchmarks/index.md
     - Getting started: 
