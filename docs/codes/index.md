@@ -2,6 +2,22 @@
 
 See below for coding projects developed by the community that utilize HydroDL
 
+
+### Differentiable Modeling Framework
+
+<div class="result" markdown>
+  <div class="grid cards" markdown>
+
+-   [𝛿MG __(Lonzarich et al. 2024)__][lonzarich_2024.md]
+    ---
+![](../assets/project-figures/dMG.png){align="left" width="120"}
+A second-generation generic, scalable differentiable modeling framework on PyTorch for integrating neural networks with physical models. Coupled with HydroDL2, 𝛿MG enables the hydrologic modeling like HydroDL while greatly expanding the range of applications and capabilities.
+
+
+  </div>
+</div>
+
+
 ### Differentiable Models
 
 <div class="result" markdown>
@@ -16,17 +32,6 @@ A differentiable routing method that uses Muskingum-Cunge and an NN to infer par
 
   </div>
 </div>
-
-<div class="result" markdown>
-  <div class="grid cards" markdown>
-
--   [$\delta$ MG + hydroDL2 __(Lonzarich et al. 2024)__][lonzarich_et_al_2024.md]
-
-    ---
-A second-generation generic, scalable differentiable modeling framework on PyTorch for integrating neural networks with physical models. Coupled with HydroDL2, dMG enables the hydrologic modeling like HydroDL while greatly expanding the range of applications and capabilities.
-  </div>
-</div>
-
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
@@ -74,7 +79,7 @@ Differentiable Parameter Learning
   </div>
 </div>
 
-### Differentiable Models
+
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
@@ -177,4 +182,5 @@ First time Transformer achieved the same performance as LSTM on CAMELS dataset; 
   [Tsai_et_al_2021.md]: ../codes/Tsai_2021.md
   [Rahmani_et_al_2023.md]: ../codes/Rahmani_et_al_2023.md
   [liu_2024.md]: ../codes/liu_2024.md
+  [Leo_2024.md]: ../codes/Leo_2024.md
 
