@@ -125,6 +125,7 @@ markdown_extensions:
 
 nav:
     - HydroDL: index.md
+    - dMG: dmg/index.md
     - Benchmarks:
         - benchmarks/index.md
     - Getting started: 
