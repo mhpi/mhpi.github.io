@@ -8,11 +8,10 @@ See below for coding projects developed by the community that utilize HydroDL
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
--   [𝛿MG][lonzarich_2024.md]
+-   [𝛿MG __(Lonzarich et al. 2024)__][lonzarich_2024.md]
     ---
 ![](../assets/project-figures/dMG.png){align="left" width="120"}
 A second-generation generic, scalable differentiable modeling framework on PyTorch for integrating neural networks with physical models. Coupled with HydroDL2, 𝛿MG enables the hydrologic modeling like HydroDL while greatly expanding the range of applications and capabilities.
-
 
   </div>
 </div>
@@ -28,7 +27,6 @@ A second-generation generic, scalable differentiable modeling framework on PyTor
     ---
 ![Manning's n recovery against USGS Data](../assets/project-figures/wrcr27009-fig-0001-m.jpg){align="left" width="120"}
 A differentiable routing method that uses Muskingum-Cunge and an NN to infer parameterizations for Manning’s roughness
-
 
   </div>
 </div>

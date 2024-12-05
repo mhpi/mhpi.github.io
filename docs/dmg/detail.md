@@ -17,9 +17,6 @@ For differentiable hydrology models used in MHPI research, 𝛿MG seamlessly int
 
 <br>
 
-Explore the project's [roadmap](https://github.com/orgs/mhpi/projects/4) for planned features and future improvements. It is in our roadmap to interface with differentiable numerical packages like torchode and torchdiffeq.
-
-
 ### Key Features
 - **Hybrid Modeling**: Combines neural networks with physical process equations for enhanced interpretability and generalizability. Skip manually tuning model parameters by using neural networks to feed robust and interpretable parameter predictions directly.
 
@@ -31,11 +28,16 @@ Explore the project's [roadmap](https://github.com/orgs/mhpi/projects/4) for pla
 
 - **NextGen-ready**: 𝛿MG is designed to be [CSDMS BMI](https://csdms.colorado.edu/wiki/BMI)-compliant, and our differentiable hydrology models in hydroDL2 come with a prebuilt BMI allowing seamless compatibility with [NOAA-OWP](https://water.noaa.gov/about/owp)'s [NextGen National Water Modelling Framework](https://github.com/NOAA-OWP/ngen). Incidentally, this capability also lends to 𝛿MG being easily wrappable for other applications.
 
+<br>
+
+### Use Cases
+This package powers the global- and  ([`national-scale water model`](https://doi.org/10.22541/essoar.172736277.74497104/v1)) that provide high-quality seamless hydrologic simulations over US and the world.
+It also hosts ([`global-scale photosynthesis `](https://doi.org/10.22541/au.173101418.87755465/v1)) learning and simulations
 
 <br>
 
 ### The Overall Idea
-We define a "differentiable model" (dModel) class which describes how neural networks and the process-based model are coupled. dModel holds NNs and process-based models as attributes and can be trained and forwarded just as any other PyTorch model (nn.Module). We define classes to handle datasets (dataset class), various train/test experiments (trainer), multimodel handling and multi-GPU training (model handler), data assimilation and streaming in a uniform and modular way. All training and simulations can be specified by a config file to be adapted to custom applications. 
+We define a "differentiable model" class,*DeltaModel*, class which describes how neural networks and the process-based model are coupled. dModel holds NNs and process-based models as attributes and can be trained and forwarded just as any other PyTorch model (nn.Module). We define classes to handle datasets (dataset class), various train/test experiments (trainer), multimodel handling and multi-GPU training (model handler), data assimilation and streaming in a uniform and modular way. All training and simulations can be specified by a config file to be adapted to custom applications. 
 According to the schema, we define these core classes, from bottom up:
 
 - **NN**: Neural networks that can provide either parameters, missing process representations, corrections or other forms of enhancements to process-based models.
@@ -45,6 +47,31 @@ According to the schema, we define these core classes, from bottom up:
 - **Trainer**: Manages the train and test of models and connects data to model.
 - **dataset**: Manages data ingestion in a unified format; support multiple file formats.
 
+<br>
+
+### 𝛿MG Repository Structure:
+
+    .
+    ├── deltaModel/
+    │   ├── __main__.py                 # Main entry point
+    │   ├── conf/                       # Configuration files
+    │   │   ├── config.py
+    │   │   ├── config.yaml             # Main configuration file
+    │   │   ├── hydra/                  
+    │   │   └── observations/           # Observation data config
+    │   ├── core/                       
+    │   │   ├── calc/                   # Calculation utilities
+    │   │   ├── data/                   # Data processing
+    │   │   └── utils/                  # Helper functions
+    │   ├── models/                     
+    │   │   ├── differentiable_model.py # Differentiable model definition
+    │   │   ├── model_handler.py        # High-level model manager
+    │   │   ├── loss_functions/         # Custom loss functions
+    │   │   └── neural_networks/        # Neural network architectures
+    │   └── trainers/                   # Training routines
+    ├── docs/                           
+    ├── envs/                           # Environment configuration files
+    └── example/                        # Example scripts and usage guides
 
 <br>
 
@@ -53,6 +80,8 @@ According to the schema, we define these core classes, from bottom up:
 Here’s an example of how you can build a differentiable model, coupling a physics-based model with a neural network to intelligently learn model parameters. In this instance, we use an
 LSTM with the [HBV](https://en.wikipedia.org/wiki/HBV_hydrology_model) hydrology model.
 ```python
+CONFIG_PATH = '../example/conf/config_dhbv1_1p.yaml'
+
 # 1. Load configuration dictionary of model parameters and options.
 config = load_config(CONFIG_PATH)
 
@@ -73,9 +102,10 @@ dpl_model = dHBV(phy_model=phy_model, nn_model=nn)
 
 # 5. For example, to forward:
 output = dpl_model.forward(dataset_sample)
-
 ```
 
-### Use Cases
-This package powers the global- and  ([`national-scale water model`](https://doi.org/10.22541/essoar.172736277.74497104/v1)) that provide high-quality seamless hydrologic simulations over US and the world.
-It also hosts ([`global-scale photosynthesis `](https://doi.org/10.22541/au.173101418.87755465/v1)) learning and simulations
+See [here](https://github.com/mhpi/generic_deltaModel/blob/master/example/differentiable_hydrology/dhbv_tutorial.ipynb) in the `generic_deltaModel` repository for this and other examples.
+
+<br>
+
+Explore the [roadmap](https://github.com/orgs/mhpi/projects/4) for planned features and improvements. It is in our roadmap to interface with differentiable numerical packages like torchode and torchdiffeq.
