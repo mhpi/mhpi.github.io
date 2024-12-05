@@ -1,7 +1,9 @@
 # Code 
 
 See below for coding projects developed by the community that utilize HydroDL
+
 ### Differentiable Modeling Framework
+
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
