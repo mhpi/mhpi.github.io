@@ -8,7 +8,7 @@ See below for coding projects developed by the community that utilize HydroDL
 -   [generic_deltaModel (gMD)][Leo_2024.md]
 
     ---
-![Generic, Scalable Differentiable Modeling Framework on PyTorch](../assets/project-figures/gMD.jpg){align="left" width="120"}
+![Generic, Scalable Differentiable Modeling Framework on PyTorch](../assets/project-figures/gMD.PNG){align="left" width="120"}
 Generic, Scalable Differentiable Modeling Framework on PyTorch
 
 
