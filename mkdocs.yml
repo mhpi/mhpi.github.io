@@ -151,7 +151,7 @@ nav:
         - Stream-Temperature: codes/Rahmani_et_al_2021.md
         - diff-Stream-Temperature: codes/Rahmani_et_al_2023.md
         - Transformer: codes/liu_2024.md
-    - Framework:
+    - Frameworks:
         - 𝛿MG: 
             - Overview: codes/frameworks.md
             - Details: dmg/detail.md
