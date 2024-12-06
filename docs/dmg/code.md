@@ -9,6 +9,10 @@ For [tutorials](https://github.com/mhpi/generic_deltaModel/tree/master/example) 
 - [HydroDL 2.0](https://github.com/mhpi/hydroDL2)
 - [CAMELS Date ](https://mhpi-spatial.s3.us-east-2.amazonaws.com/mhpi-release/camels/camels_data.zip)
 
+We include an optional GUI for constructing/editing 𝛿MG YAML configuration files with a user-friendly interface (instructions below):
+
+- [GUI Config builder (Zip)](https://mhpi-spatial.s3.us-east-2.amazonaws.com/mhpi-release/config_builder_gui/Config+Builder+GUI.zip)
+- ([Source Code](https://github.com/mhpi/GUI-Config-builder))
 
 <br>
 
@@ -102,3 +106,28 @@ For a functioning 𝛿MG + HydroDL2 setup...
 ### 4. Build Models
 
 - That's it. You should now be able to run the tutorials, train/test MHPI benchmarks, and build your own differentiable models.
+
+<br>
+
+# Using the GUI
+
+
+## Setup
+
+To use the HydroDL Config Builder from the GitHub source code, you have two options:
+
+- Run Directly: Execute the tool using main.py.
+- Build a Windows Executable: Use build.py to generate a standalone Windows executable.
+  
+Alternatively, you can skip the build process by downloading the precompiled executable [here](https://mhpi-spatial.s3.us-east-2.amazonaws.com/mhpi-release/config_builder_gui/Config+Builder+GUI.zip). Once downloaded, simply unzip and run the executable  `HydroDL Config Builder.exe` on Windows to start the builder and begin creating/editing your configuration files. 
+
+Two files can potentiallly be created by this process. One contains model and experiment settings, while the other is a data config that specifies dataset specific information like data save paths.
+
+
+## Where do the Config Files go?
+
+Once you have created and saved your YAML config files, they can go one of two places depending on your intentions. 
+- Tutorials: `example/conf`, with data config in `example/conf/observations`.
+- Development with 𝛿MG: `deltaModel/conf` with data config in `deltaModel/conf/observations`
+
+Note. Before running 𝛿MG, ensure that 'observations' in the main config matches the name of the data config you want to use.
