@@ -125,10 +125,6 @@ markdown_extensions:
 
 nav:
     - HydroDL: index.md
-    - 𝛿MG:
-        - Overview: codes/lonzarich_2024.md
-        - Details: dmg/detail.md
-        - Code Release: dmg/code.md
     - Benchmarks:
         - benchmarks/index.md
     - Getting started: 
@@ -155,7 +151,11 @@ nav:
         - Stream-Temperature: codes/Rahmani_et_al_2021.md
         - diff-Stream-Temperature: codes/Rahmani_et_al_2023.md
         - Transformer: codes/liu_2024.md
-    
+    - Frameworks:
+        - 𝛿MG: 
+            - Overview: codes/lonzarich_2024.md
+            - Details: dmg/detail.md
+            - Code Release: dmg/code.md
 
 extra_javascript:
   # - javascripts/plots.js

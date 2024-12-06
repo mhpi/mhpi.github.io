@@ -64,7 +64,7 @@ According to the schema, we define these core classes, from bottom up:
     │   │   ├── data/                   # Data processing
     │   │   └── utils/                  # Helper functions
     │   ├── models/                     
-    │   │   ├── differentiable_model.py # Differentiable model definition
+    │   │   ├── differentiable_model.py # Differentiable model definition DeltaModel
     │   │   ├── model_handler.py        # High-level model manager
     │   │   ├── loss_functions/         # Custom loss functions
     │   │   └── neural_networks/        # Neural network architectures
