@@ -76,7 +76,7 @@ According to this schema, we define these core classes, from bottom up:
     │   └── trainers/                   # Training routines
     ├── docs/                           
     ├── envs/                           # Environment configuration files
-    └── example/                        # Example scripts and usage guides
+    └── example/                        # Example and tutorial scripts
 
 <br>
 
@@ -217,7 +217,7 @@ dpl_model = dHBV(phy_model=phy_model, nn_model=nn)
 output = dpl_model.forward(dataset_sample)
 ```
 
-See [here](https://github.com/mhpi/generic_deltaModel/blob/master/example/differentiable_hydrology/dhbv_tutorial.ipynb) in the `generic_deltaModel` repository for this and other examples.
+See [here](https://github.com/mhpi/generic_deltaModel/blob/master/example/differentiable_hydrology/dhbv_tutorial.ipynb) in the `generic_deltaModel` repository for this and other tutorials.
 
 <br>
 
