@@ -13,7 +13,7 @@ For [tutorials](https://github.com/mhpi/generic_deltaModel/tree/master/example) 
 <br>
 
 
-# Getting Started with *HydroDL 2.0*
+# Getting Started with *𝛿MG* + *HydroDL 2.0*
 
 ## System Requirements
 
