@@ -11,7 +11,7 @@ See below for coding projects developed by the community that utilize HydroDL
 -   [𝛿MG __(Lonzarich et al. 2024)__][frameworks.md]
     ---
 ![](../assets/project-figures/dMG.png){align="left" width="120"}
-A second-generation generic, scalable differentiable modeling framework on PyTorch for integrating neural networks with physical models. Coupled with HydroDL2, 𝛿MG enables the hydrologic modeling like HydroDL while greatly expanding the range of applications and capabilities.
+A second-generation generic, scalable differentiable modeling framework on PyTorch for integrating neural networks with physical models. Coupled with HydroDL2, 𝛿MG enables hydrologic modeling like HydroDL while greatly expanding the range of applications and capabilities.
 
   </div>
 </div>
