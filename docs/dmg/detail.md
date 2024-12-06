@@ -80,7 +80,115 @@ According to this schema, we define these core classes, from bottom up:
 
 <br>
 
-### Quick Start: Building a Differentiable HBV (𝛿HBV) Model
+# Getting Started with *𝛿MG* + *HydroDL 2.0*
+
+## System Requirements
+𝛿MG uses PyTorch models requiring CUDA exclusively supported by NVIDIA GPUs. This requires using
+
+- Windows or Linux
+
+- NVIDIA GPU(s) (with CUDA version >12.0 recommended)
+
+<br>
+
+## Setup
+For a functioning 𝛿MG + HydroDL2 setup...
+
+### 1. Clone and Download Data
+- Open a terminal on your system, navigate to the directory where 𝛿MG and HydroDL2 will be stored, and clone (`master` branch):
+  
+    ```shell
+    git clone https://github.com/mhpi/generic_deltaModel.git
+    git clone https://github.com/mhpi/hydroDL2.git
+    ```
+
+- Download the CAMELS data zip from the link above and extract, optionally to a `Data/` folder in your working directory, which should now look something like
+
+```
+    .
+    ├── Data/
+    │   ├── training_file           # Pickle file with training data
+    │   ├── validation_file         # Pickle file with validation/testing data
+    │   ├── gage_ids.npy            # Numpy array with all 671 CAMELS gage ids
+    │   └── 531_subset.txt          # Text file of gage ids in 531-gage subset
+    ├── generic_deltaModel/
+    └── hydroDL2/ 
+
+```
+
+### 2. Install the ENV
+- A minimal yaml list of essential packages is included in `generic_deltaModel`: `generic_deltaModel/envs/deltamodel_env.yaml`.
+- To install, run the following (optionally, include `--prefix` flag to specify the env download location):
+
+     ```shell
+     conda env create --file /generic_deltaModel/envs/deltamodel_env.yaml
+     ```
+     or
+  
+     ```shell
+     conda env create --prefix path/to/env --file /generic_deltaModel/envs/deltamodel_env.yaml
+     ```
+
+- Activate with `conda activate deltamodel` and open a Python instance to check that CUDA is available with PyTorch:
+
+     ```python
+     import torch
+     print(torch.cuda.is_available())
+     ```
+
+- If CUDA is not available, often PyTorch is installed incorrectly. Uninstall PyTorch from the env and reinstall according to your system specifications [here](https://pytorch.org/get-started/locally/). E.g.,
+
+     ```shell
+     conda uninstall pytorch
+     conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+     ```
+
+### 3. Install HydroDL2
+- For `hydroDL2` to be accessible within `generic_deltaModel`, install with pip (optionally, include `-e` flag to install with developer mode):
+
+     ```shell
+     cd hydroDL2
+     pip install .
+     ```
+
+     or
+  
+     ```shell
+     cd hydroDL2
+     pip install -e .
+     ```
+
+### 4. Build Models
+- That's it. You should now be able to run the tutorials, train/test MHPI benchmarks, and build your own differentiable models.
+
+<br>
+
+## Using the Config GUI
+
+### Setup
+
+To use the HydroDL Config Builder from the GitHub source code, you have two options:
+
+- Run Directly: Execute the tool using main.py.
+- Build a Windows Executable: Use build.py to generate a standalone Windows executable.
+  
+Alternatively, you can skip the build process by downloading the precompiled executable [here](https://mhpi-spatial.s3.us-east-2.amazonaws.com/mhpi-release/config_builder_gui/Config+Builder+GUI.zip). Once downloaded, simply unzip and run the executable  `HydroDL Config Builder.exe` on Windows to start the builder and begin creating/editing your configuration files. 
+
+Two files can potentiallly be created by this process. One contains model and experiment settings, while the other is a data config that specifies dataset specific information like data save paths.
+
+
+### Where do the Config Files go?
+
+Once you have created and saved your YAML config files, they can go one of two places depending on your intentions. 
+
+- Tutorials: `example/conf`, with data config in `example/conf/observations`.
+- Development with 𝛿MG: `deltaModel/conf` with data config in `deltaModel/conf/observations`
+
+Note. Before running 𝛿MG, ensure that 'observations' in the main config matches the name of the data config you want to use.
+
+<br>
+
+## Quick Start: Building a Differentiable HBV (𝛿HBV) Model
 
 Here’s an example of how you can build a differentiable model, coupling a physics-based model with a neural network to intelligently learn model parameters. In this instance, we use an
 LSTM with the [HBV](https://en.wikipedia.org/wiki/HBV_hydrology_model) hydrology model. The [Config GUI](https://mhpi-spatial.s3.us-east-2.amazonaws.com/mhpi-release/config_builder_gui/Config+Builder+GUI.zip) can be used to create/edit additional config files for use with these examples. (See [here](https://github.com/mhpi/GUI-Config-builder/blob/main/README.md) for usage instructions.)
