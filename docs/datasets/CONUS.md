@@ -1,5 +1,5 @@
 # A continental Hydrologic dataset on seamless MERIT river network and ~180,000 MERIT unit basins
-<!-- ![Alt text](../assets/project-figures/large_domin_Song_2024.jpg) -->
+![Alt text](../assets/project-figures/large_domin_Song_2024.jpg)
 
 ## Preprint paper
 
