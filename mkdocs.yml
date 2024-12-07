@@ -156,6 +156,9 @@ nav:
             - Overview: codes/frameworks.md
             - Details: dmg/detail.md
             - Code Release: dmg/code.md
+    - Datasets:
+        - CONUS: 
+            - Overview: datasets/CONUS.md
 
 extra_javascript:
   # - javascripts/plots.js
