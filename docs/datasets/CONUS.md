@@ -1,9 +1,13 @@
 # A continental Hydrologic dataset on seamless MERIT river network and ~180,000 MERIT unit basins
+
 ![Alt text](../assets/project-figures/large_domin_Song_2024.jpg)
 
 ## Preprint paper
 
 Song, Yalan, Tadd Bindas, Chaopeng Shen, Haoyu Ji, Wouter Johannes Maria Knoben, Leo Lonzarich, Martyn P. Clark et al. "High-resolution national-scale water modeling is enhanced by multiscale differentiable physics-informed machine learning." Authorea Preprints (2024). https://doi.org/10.22541/essoar.172736277.74497104/v1
+### Results
+![Alt text](../assets/project-figures/CONUS_dataset_NNSE_Song_2024.jpg)
+![Alt text](../assets/project-figures/CONUS_dataset_KGE_Song_2024.jpg)
 
 ## Data description
 
