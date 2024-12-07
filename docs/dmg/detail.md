@@ -201,7 +201,7 @@ LSTM to learn parameters for the [HBV](https://en.wikipedia.org/wiki/HBV_hydrolo
 from example import load_config 
 from hydroDL2.models.hbv.hbv import HBV as hbv
 from deltaModel.models.neural_networks import init_nn_model
-from deltaModel.models.differentiable_model import DeltaModel as dHBV
+from deltaModel.models.differentiable_model import DeltaModel
 from deltaModel.core.data.data_loaders.hydro_loader import HydroDataLoader
 from deltaModel.core.data.data_samplers.hydro_sampler import take_sample
 
@@ -222,7 +222,7 @@ nn = init_nn_model(phy_model, config['dpl_model'])
 
 # 4. Create the differentiable model dHBV: a torch.nn.Module that describes how 
 # the NN is linked to the physical model HBV.
-dpl_model = dHBV(phy_model=phy_model, nn_model=nn)
+dpl_model = DeltaModel(phy_model=phy_model, nn_model=nn)
 
 
 ## From here, forward or train dpl_model just as any torch.nn.Module model.
@@ -231,15 +231,15 @@ dpl_model = dHBV(phy_model=phy_model, nn_model=nn)
 output = dpl_model.forward(dataset_sample)
 ```
 
-In the above, we illustrate a critical behavior of the differentiable model object `DeltaModel` (dHBV), which is the the composition of a physical model, `phy_model`, with a neural network, `nn`. 
+In the above, we illustrate a critical behavior of the differentiable model object `DeltaModel`, which is the the composition of the physical model, `phy_model=hbv`, with a neural network, `nn`. 
 
-When we forward DeltaModel, we feed scaled inputs for the NN (stored within the dataset dictionary) to the NN and forward, which then outputs a set of parameter predictions (the config and phy_model definition ensure NN output is of correct size). Then, these parameters pass with the dataset dictionary to the forward the phy_model and output final model predictions. Internally, these steps are represented within DeltaModel as
+When we forward DeltaModel, we feed scaled inputs (stored within the dataset dictionary) to the NN and forward, which returns a set of predicted parameters. These parameters then pass with the dataset dictionary to forward the phy_model and output final model predictions. Internally, these steps are represented within DeltaModel forward method as
 
 ```python
 # Parameterization
 parameters = self.nn_model(dataset_sample['xc_nn_norm'])        
 
-# Physics model
+# Physics model forward
 predictions = self.phy_model(
     dataset_sample,
     parameters,
