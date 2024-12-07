@@ -11,7 +11,7 @@ Song, Yalan, Tadd Bindas, Chaopeng Shen, Haoyu Ji, Wouter Johannes Maria Knoben,
 
 ## Data description
 
-𝛿HBV2_0_continental_data ([zenodo](https://zenodo.org/records/13774817)) is from High-resolution, multiscale, differentiable HBV hydrologic models, 𝛿HBV2.0UH and 𝛿HBV2.0dMC.
+𝛿HBV2_0_continental_data ([zenodo](https://doi.org/10.5281/zenodo.13774373)) is from High-resolution, multiscale, differentiable HBV hydrologic models, 𝛿HBV2.0UH and 𝛿HBV2.0dMC.
 𝛿HBV2.0UH is a high-resolution, multiscale model that uses unit hydrograph routing for.
 𝛿HBV2.0dMC is a high-resolution, multiscale model that uses external Muskingum-Cunge routing.
 
