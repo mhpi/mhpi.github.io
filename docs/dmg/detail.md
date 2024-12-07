@@ -8,18 +8,20 @@ learning capabilities to a wide variety of domains where prior equations can bri
 
 <br>
 
-### Ecosystem Integration
+
+## Ecosystem Integration
 For differentiable hydrology models used in MHPI research, 𝛿MG seamlessly integrates with:
 
 - **HydroDL2.0 ([`hydroDL2`](https://github.com/mhpi/hydroDL2))**: Home to MHPI's suite of physics-based hydrology models, and differentiable model augmentations (think variational data
       assimilation, model coupling, and additional physics-based hydrology tools).
 - **HydroData ([`hydro_data_dev`](https://github.com/mhpi/hydro_data_dev))**: Data extraction, processing, and management tools optimized for geospatial datasets.
 - **Config GUI ([`GUI-Config-builder`](https://mhpi-spatial.s3.us-east-2.amazonaws.com/mhpi-release/config_builder_gui/Config+Builder+GUI.zip))([Source](https://github.com/mhpi/GUI-Config-builder))**: An intuitive, user-friendly tool designed to simplify the creation and editing of configuration files for model setup and development.
-- **Concurrent development activities**: We are working on these efforts connected to 𝛿MG: (i) numerical PDE solvers on torch; (ii) [adjoint](https://doi.org/10.5194/hess-28-3051-2024) sensitivity; (iii) extremely efficient and highly accurate surrogate models; (iv) downscaled and bias corrected climate data; (v) mysteriously powerful neural networks.
+- **Concurrent development activities**: We are working on these efforts connected to 𝛿MG: (i) numerical PDE solvers on torch; (ii) [adjoint](https://doi.org/10.5194/hess-28-3051-2024) sensitivity; (iii) extremely efficient and highly accurate surrogate models; (iv) downscaled and bias corrected climate data; (v) mysteriously powerful neural networks, and more...
 
 <br>
 
-### Key Features
+
+## Key Features
 - **Hybrid Modeling**: Combines neural networks with physical process equations for enhanced interpretability and generalizability. Skip manually tuning model parameters by using neural networks to feed robust and interpretable parameter predictions directly.
 
 - **PyTorch Integration**: Easily scales with PyTorch, enabling efficient training and compatibility with modern deep learning tools, trained foundation models, differentiable numerical solvers.
@@ -32,30 +34,34 @@ For differentiable hydrology models used in MHPI research, 𝛿MG seamlessly int
 
 <br>
 
-### Use Cases
+
+## Use Cases
 This package powers the global- and  ([`national-scale water model`](https://doi.org/10.22541/essoar.172736277.74497104/v1)) that provide high-quality seamless hydrologic simulations over US and the world.
 It also hosts ([`global-scale photosynthesis `](https://doi.org/10.22541/au.173101418.87755465/v1)) learning and simulations
 
 <br>
 
-### The Overall Idea
+
+## The Overall Idea
 Characterized by the combination of process-based equations with neural networks (NNs), differentiable models train these components together, enabling parameter inputs for the equations to be effectively and efficiently learned at scale by the NNs. There are many possibilities for how such models are built.
 
-In 𝛿MG, we define a differentiable model with the class *DeltaModel* that can couple one or more NNs with a process-based model (itself potentially a collection of models). This class holds `nn` and a `phy_model` objects, respectively, as attributes internally and describes how they interface with each other. The *DeltaModel* object can be trained and forwarded just as any other PyTorch model (nn.Module). We also define *DataLoader* and *DataSampler* classes to handle datasets, a *Trainer* class for running train/test experiments, and a *ModelHandler* class for multimodel handling, multi-GPU training, data assimilation and streaming in a uniform and modular way. All model, training, and simulation settings are be collected in a configuration file that can be adapted to custom applications. 
+In 𝛿MG, we define a differentiable model with the class *DeltaModel* that can couple one or more NNs with a process-based model (itself potentially a collection of models). This class holds `nn` and a `phy_model` objects, respectively, as attributes internally and describes how they interface with each other. The *DeltaModel* object can be trained and forwarded just as any other PyTorch model (nn.Module).
+
+We also define *DataLoader* and *DataSampler* classes to handle datasets, a *Trainer* class for running train/test experiments, and a *ModelHandler* class for multimodel handling, multi-GPU training, data assimilation and streaming in a uniform and modular way. All model, training, and simulation settings are be collected in a configuration file that can be adapted to custom applications. 
 According to this schema, we define these core classes, from bottom up:
 
 - **nn**: PyTorch neural networks that can learn and provide either parameters, missing process representations, corrections, or other forms of enhancements to physical models.
 - **phy_model**: The physical model written in PyTorch (or potentially another interoperable differentiable platform) that takes learnable outputs from the `nn` model(s) and returns a prediction of some target variable(s). This can also be a wrapper holding several physical models.
 - **DeltaModel**: Holds (one or multiple) `nn` objects and a `phy_model` object, and describes how they are coupled; connection to ODE packages.
 - **ModelHandler**: Manages multimodeling, multi-GPU compute, and data assimilation or streaming. Can contain its own optimizers. Acts as an interface to CSDMS BMI or other interfaces.
-- **DataSampler:**: Samples data according to data format and training/testing requirements.
+- **DataSampler**: Samples data according to data format and training/testing requirements.
 - **Trainer**: Manages model training and testing, and connects data to models.
 - **DataLoader**: Preprocesses data to be used in training, testing, and simulation.
 
 <br>
 
-### 𝛿MG Repository Structure:
 
+## 𝛿MG Repository Structure:
     .
     ├── deltaModel/
     │   ├── __main__.py                 # Main entry point
@@ -80,8 +86,8 @@ According to this schema, we define these core classes, from bottom up:
 
 <br>
 
-# Getting Started with *𝛿MG* + *HydroDL 2.0*
 
+# Getting Started with *𝛿MG* + *HydroDL 2.0*
 ## System Requirements
 𝛿MG uses PyTorch models requiring CUDA exclusively supported by NVIDIA GPUs. This requires using
 
@@ -91,10 +97,9 @@ According to this schema, we define these core classes, from bottom up:
 
 <br>
 
-## Setup
-For a functioning 𝛿MG + HydroDL2 setup...
 
-### 1. Clone and Download Data
+## Setup
+### 1. Clone and Download Example Data
 - Open a terminal on your system, navigate to the directory where 𝛿MG and HydroDL2 will be stored, and clone (`master` branch):
   
     ```shell
@@ -102,11 +107,11 @@ For a functioning 𝛿MG + HydroDL2 setup...
     git clone https://github.com/mhpi/hydroDL2.git
     ```
 
-- Download the CAMELS data zip from the link above and extract, optionally to a `Data/` folder in your working directory, which should now look something like
+- Download the CAMELS data zip from the link above and extract, optionally to a `data/` folder in your working directory, which should now look something like
 
 ```
     .
-    ├── Data/
+    ├── data/
     │   ├── training_file           # Pickle file with training data
     │   ├── validation_file         # Pickle file with validation/testing data
     │   ├── gage_ids.npy            # Numpy array with all 671 CAMELS gage ids
@@ -163,8 +168,8 @@ For a functioning 𝛿MG + HydroDL2 setup...
 
 <br>
 
-## Using the Config GUI
 
+## Using the Config GUI
 ### Setup
 
 To use the HydroDL Config Builder from the GitHub source code, you have two options:
@@ -177,7 +182,7 @@ Alternatively, you can skip the build process by downloading the precompiled exe
 Two files can potentiallly be created by this process. One contains model and experiment settings, while the other is a data config that specifies dataset specific information like data save paths.
 
 
-### Where do the Config Files go?
+### Where do Config Files go?
 
 Once you have created and saved your YAML config files, they can go one of two places depending on your intentions. 
 
@@ -188,12 +193,21 @@ Note. Before running 𝛿MG, ensure that 'observations' in the main config match
 
 <br>
 
-## Quick Start: Building a Differentiable HBV (𝛿HBV) Model
 
-Here’s an example of how you can build a differentiable model, coupling a physics-based model with a neural network to intelligently learn model parameters. In this instance, we use an
-LSTM with the [HBV](https://en.wikipedia.org/wiki/HBV_hydrology_model) hydrology model. The [Config GUI](https://mhpi-spatial.s3.us-east-2.amazonaws.com/mhpi-release/config_builder_gui/Config+Builder+GUI.zip) can be used to create/edit additional config files for use with these examples. (See [here](https://github.com/mhpi/GUI-Config-builder/blob/main/README.md) for usage instructions.)
+## Quick Start: Building a Differentiable HBV (𝛿HBV) Model
+Here’s an example of how you can build a differentiable model, coupling a physical model with a neural network to intelligently learn parameters. In this instance, we use an
+LSTM to learn parameters for the [HBV](https://en.wikipedia.org/wiki/HBV_hydrology_model) hydrology model.
 ```python
+from example import load_config 
+from hydroDL2.models.hbv.hbv import HBV as hbv
+from deltaModel.models.neural_networks import init_nn_model
+from deltaModel.models.differentiable_model import DeltaModel as dHBV
+from deltaModel.core.data.data_loaders.hydro_loader import HydroDataLoader
+from deltaModel.core.data.data_samplers.hydro_sampler import take_sample
+
+
 CONFIG_PATH = '../example/conf/config_dhbv1_1p.yaml'
+
 
 # 1. Load configuration dictionary of model parameters and options.
 config = load_config(CONFIG_PATH)
@@ -217,8 +231,26 @@ dpl_model = dHBV(phy_model=phy_model, nn_model=nn)
 output = dpl_model.forward(dataset_sample)
 ```
 
-See [here](https://github.com/mhpi/generic_deltaModel/blob/master/example/differentiable_hydrology/dhbv_tutorial.ipynb) in the `generic_deltaModel` repository for this and other tutorials.
+In the above, we illustrate a critical behavior of the differentiable model object `DeltaModel` (dHBV), which is the the composition of a physical model, `phy_model`, with a neural network, `nn`. 
+
+When we forward DeltaModel, we feed scaled inputs for the NN (stored within the dataset dictionary) to the NN and forward, which then outputs a set of parameter predictions (the config and phy_model definition ensure NN output is of correct size). Then, these parameters pass with the dataset dictionary to the forward the phy_model and output final model predictions. Internally, these steps are represented within DeltaModel as
+
+```python
+# Parameterization
+parameters = self.nn_model(dataset_sample['xc_nn_norm'])        
+
+# Physics model
+predictions = self.phy_model(
+    dataset_sample,
+    parameters,
+)
+```
+
+See [examples/](https://github.com/mhpi/generic_deltaModel/blob/master/example/differentiable_hydrology/dhbv_tutorial.ipynb) in the `generic_deltaModel` repository for this and other tutorials.
+
+Note, the [Config GUI](https://mhpi-spatial.s3.us-east-2.amazonaws.com/mhpi-release/config_builder_gui/Config+Builder+GUI.zip) can be used to create/edit additional config files for use with these examples. ([Usage instructions](https://github.com/mhpi/GUI-Config-builder/blob/main/README.md))
 
 <br>
+
 
 Explore the [roadmap](https://github.com/orgs/mhpi/projects/4) for planned features and improvements. It is in our roadmap to interface with differentiable numerical packages like torchode and torchdiffeq.
