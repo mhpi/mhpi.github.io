@@ -253,4 +253,4 @@ Note, the [Config GUI](https://mhpi-spatial.s3.us-east-2.amazonaws.com/mhpi-rele
 <br>
 
 
-Explore the [roadmap](https://github.com/orgs/mhpi/projects/4) for planned features and improvements. It is in our roadmap to interface with differentiable numerical packages like torchode and torchdiffeq.
+Explore the [roadmap](https://github.com/orgs/mhpi/projects/4) for planned features and improvements. Differentiable numerical packages like torchode and torchdiffeq will be coming additions in the near future.
