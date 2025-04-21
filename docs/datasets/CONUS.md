@@ -1,10 +1,13 @@
-# A continental Hydrologic dataset on seamless MERIT river network and ~180,000 MERIT unit basins
+# A 40-year continental Hydrologic dataset on seamless MERIT river network and ~180,000 MERIT unit basins
 
 ![Alt text](../assets/project-figures/large_domin_Song_2024.jpg)
+![Alt text](../assets/project-figures/Hurricane_Michael_in_2018.png)
+![Alt text](../assets/project-figures/Hurricane_Isaias_in_2020.png)
 
-## Preprint paper
+## Paper
 
-Song, Yalan, Tadd Bindas, Chaopeng Shen, Haoyu Ji, Wouter Johannes Maria Knoben, Leo Lonzarich, Martyn P. Clark et al. "High-resolution national-scale water modeling is enhanced by multiscale differentiable physics-informed machine learning." Authorea Preprints (2024). https://doi.org/10.22541/essoar.172736277.74497104/v1
+Song, Y., Bindas, T., Shen, C., Ji, H., Knoben, W. J. M., Lonzarich, L., et al. (2025). High‐resolution national‐scale water modeling is enhanced by multiscale differentiable physics‐informed machine learning. Water Resources Research, 61, e2024WR038928. https://doi.org/10.1029/2024WR038928
+
 ### Results
 ![Alt text](../assets/project-figures/CONUS_dataset_NNSE_Song_2024.png)
 ![Alt text](../assets/project-figures/CONUS_dataset_KGE_Song_2024.png)
@@ -17,11 +20,11 @@ Song, Yalan, Tadd Bindas, Chaopeng Shen, Haoyu Ji, Wouter Johannes Maria Knoben,
 
 The dHBV_streamflow_simulation_gages folder includes 40 years (1980–2020) of streamflow simulations at over 7,000 gage stations from GAGES-II, using both 𝛿HBV2.0UH and 𝛿HBV2.0dMC models. This data is useful for comparison with observations.
 The MERIT_flux_states folder includes 40 years (1980–2020) of spatially seamless simulations of hydrologic variables over 180 thousand MERIT unit basins on CONUS from 𝛿HBV2.0UH, including baseflow, evapotranspiration (ET), soil moisture, snow water equivalent, and runoff.
-𝛿HBV2.0_MERIT_river_network_simulation folder includes 10 years (1990-1999) of streamflow simulation on seamless MERIT river network by 𝛿HBV2.0dMC.
+The dHBV2.0_MERIT_river_network_simulation includes 40 years (1980-2020) of streamflow simulation on seamless MERIT river network by dHBV2.0dMC (New updates!).
 
 ## Code Release
 
-Code release will come with the paper acceptance.
+The dHBV2.0UH code is available at mhpi/generic_deltaModel: High-resolution differentiable model, 𝛿HBV2.0. https://doi.org/10.5281/zenodo.14827983
 
 
  
