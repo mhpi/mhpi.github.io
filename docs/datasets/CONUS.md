@@ -8,8 +8,8 @@
 Song, Y., Bindas, T., Shen, C., Ji, H., Knoben, W. J. M., Lonzarich, L., et al. (2025). High‐resolution national‐scale water modeling is enhanced by multiscale differentiable physics‐informed machine learning. Water Resources Research, 61, e2024WR038928. https://doi.org/10.1029/2024WR038928
 
 ### Results
-![Alt text](../assets/project-figures/CONUS_dataset_NNSE_Song_2024.png)
-![Alt text](../assets/project-figures/CONUS_dataset_KGE_Song_2024.png)
+![Alt text](../assets/project-figures/CONUS_dataset_NNSE_Song_2024_new.png)
+![Alt text](../assets/project-figures/CONUS_dataset_KGE_Song_2024_new.png)
 
 ## Data description
 
