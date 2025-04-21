@@ -1,8 +1,7 @@
 # A 40-year continental Hydrologic dataset on seamless MERIT river network and ~180,000 MERIT unit basins
 
 ![Alt text](../assets/project-figures/large_domin_Song_2024.jpg)
-![Alt text](../assets/project-figures/Hurricane_Michael_in_2018.png)
-![Alt text](../assets/project-figures/Hurricane_Isaias_in_2020.png)
+![Alt text](../assets/project-figures/Hurricanes.png)
 
 ## Paper
 
