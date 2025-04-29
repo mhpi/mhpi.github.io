@@ -122,4 +122,20 @@ Funded by CIROH projects, we have produced initial comparisons at the continenta
   <figcaption>Streamflow normalized Nash Sutcliffe Efficiency (NNSE) and correlation comparison between $\delta$HBV -- differentiable HBV and NWM Model, version 2.1. The $\delta$HBV is trained from 10/1980 to 09/1995 and tested from 01/1981 to 12/2019. NWM Model, version 2.1 is calibrated from 10/2008 to 09/2013 and tested from 10/2013 to 09/2016 (reprinted from Cosgrove et al., 2024). </figcaption>
 </figure>
 
+## Ensemble performances
+Significant benefits were achieved by ensembling **δHBV** and **LSTM** models across temporal, **PUB** (Prediction in Ungauged Basin), and **PUR** (Prediction in Ungauged region) tests. All models were trained from **October 1, 1980** to **September 30, 1995** on all **671 CAMELS** basins, and tested from **October 1, 1995** to **September 30, 2008** on a selected set of **531 basins**.
+
+<figure markdown>
+  ![ensemble](../assets/images/ensemble.jpg){width="750"}
+<figcaption>
+
+Median NSE values for 531 CAMELS basins, indicating model and ensemble performances for (a) temporal, (b) prediction in ungauged basin (PUB), and (c) prediction in ungauged region (PUR) tests. Different simulations are represented by variously-shaped and -colored points, and are organized by ensemble group, listed along the x-axis: LSTM, δHBV, LSTM+δHBV, and their “ensemble forcing” counterparts, LSTM<sup>ef</sup>, δHBV<sup>ef</sup>, and LSTM+δHBV<sup>ef</sup>. LSTM<sup>multi</sup> is a single LSTM model trained directly on all three forcing datasets at once. The superscript “ef” denotes the forcing datasets involved in each ensemble (choices of 1 for Daymet, 2 for NLDAS, and 3 for Maurer), while the “+” connects the model types used within an ensemble. The x-axis group and subscript “seed” indicate that simulation results were averaged based on three different random seeds (see Figure C1). Other points without “seed”, along with their corresponding error bars, are derived from the averages of metrics computed over repeated runs with three different random seeds. The error bar indicates one standard deviation above and below the average value for each simulation.
+
+
+</figcaption>
+</figure>
+
+**Citation**:  
+Li, P., Song, Y., Pan, M., Lawson, K., & Shen, C. (2025). *Ensembling Differentiable Process-based and Data-driven Models with Diverse Meteorological Forcing Datasets to Advance Streamflow Simulation*. **EGUsphere**, 2025, 1–74. https://doi.org/10.5194/egusphere-2025-483
+
 
