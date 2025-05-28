@@ -103,19 +103,19 @@ Lumped differentiable rainfall-runoff models [𝛿HBV 1.0](https://agupubs.onlin
 
 In the unseen extreme events spatial test, we used water years with a 5-year or lower return period peak flow from 1990/10/01 to 2014/09/30 for training, and held out the water years with greater than a 5-year return period peak flow for testing. The spatial test was conducted using a 5-fold cross-validation approach for basins in the [CAMELS dataset](https://gdex.ucar.edu/dataset/camels.html). This application has been benchmarked against LSTM and demonstrates better extrapolation abilities. Find more details and results in [Song, Sawadekar, et al. (2024)](https://essopenarchive.org/doi/full/10.22541/essoar.172304428.82707157).
 
-![Alt text](./docs/images/extreme_temporal.png)
+<!-- ![Alt text](./docs/images/extreme_temporal.png) -->
 
 ### 3. National-scale Water Modeling
 
 A national-scale water modeling study on approximately 180,000 river reaches (with a median length of 7 km) across CONUS using the high-resolution, multiscale, differentiable water model 𝛿HBV 2.0. This model is also operating at global-scales and has been used to generate high-quality, seamless simulations for the entire CONUS. Find more details and results in [Song, Bindas, et al. (2025)](https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2024WR038928).
 
-![Alt text](./docs/images/CONUS_dataset.jpg)
+<!-- ![Alt text](./docs/images/CONUS_dataset.jpg) -->
 
 ### 4. Global-scale Photosynthesis Modeling
 
 Currently in development. Find more details and results in [Aboelyazeed et al. (2024)](https://doi.org/10.22541/au.173101418.87755465/v1).
 
-![Alt text](./docs/images/Vcmax25_learnt_global_combined_2011_2020.png)
+<!-- ![Alt text](./docs/images/Vcmax25_learnt_global_combined_2011_2020.png) -->
 
 </br>
 
