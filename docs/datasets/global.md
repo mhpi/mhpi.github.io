@@ -12,9 +12,8 @@ Ji, H., Song, Y., Bindas, T. et al. Distinct hydrologic response patterns and tr
     <img src="https://mhpi.github.io/assets/project-figures/global_nse_map.png">
 </div>
 
+**Metrics for the glbal dataset**
 <div align="center">
-
-**Metrics for the Global Dataset**
 
 | NSE | KGE | Bias | RMSE | FLV | FHV |
 |-----|-----|------|------|------|------|
