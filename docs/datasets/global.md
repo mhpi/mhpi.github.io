@@ -40,6 +40,8 @@ Ji, H., Song, Y., Bindas, T. et al. Distinct hydrologic response patterns and tr
 ## Data description
 
 The global-scale seamless simulation from 1980-2020 [zenodo](https://zenodo.org/records/17552954) is produced by a coupled High-resolution, multiscale, differentiable global water model that incorporates both a rainfall-runoff module (𝛿HBV2.0) and channel routing module (δMC2.0).
+To develop this high-resolution global dataset, we compiled 6,165 streamflow stations worldwide to train our model for the period 1980–2000 and conducted temporal validation from 2001 to 2015. The model achieved a median NSE of 0.721 and a median KGE of 0.725 during validation. Using the trained model, we then produced a seamless global simulation spanning 1980–2020.
+also, if you are intereseted in the near-real-time simulation, please let us know.
 
 ## Code Release
 
