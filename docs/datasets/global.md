@@ -1,7 +1,7 @@
 # A long-term global-scale seamless streamflow dataset on around 2.94 million rivers.
 
 <div align="center">
-    <img src="/assets/project-figures/global_mean_streamflow_map.png">
+    <img src="https://mhpi.github.io/assets/project-figures/global_mean_streamflow_map.png">
 </div>
 
 ## Paper
@@ -9,7 +9,7 @@ Ji, H., Song, Y., Bindas, T. et al. Distinct hydrologic response patterns and tr
 
 ### Results
 <div align="center">
-    <img src="/assets/project-figures/global_nse_map.png">
+    <img src="https://mhpi.github.io/assets/project-figures/global_nse_map.png">
 </div>
 
 <div align="center">
