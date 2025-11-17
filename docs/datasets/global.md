@@ -14,11 +14,26 @@ Ji, H., Song, Y., Bindas, T. et al. Distinct hydrologic response patterns and tr
 
 <div align="center">
 
-**Metrics for the global dataset**
+<strong>Metrics for the global dataset</strong>
 
-| NSE | KGE | Bias | RMSE | FLV | FHV |
-|-----|-----|------|------|------|------|
-| 0.515 | 0.542 | -0.023 | 5.995 | 22.791 | -13.333 |
+<table>
+  <tr>
+    <th>NSE</th>
+    <th>KGE</th>
+    <th>Bias</th>
+    <th>RMSE</th>
+    <th>FLV</th>
+    <th>FHV</th>
+  </tr>
+  <tr>
+    <td>0.515</td>
+    <td>0.542</td>
+    <td>-0.023</td>
+    <td>5.995</td>
+    <td>22.791</td>
+    <td>-13.333</td>
+  </tr>
+</table>
 
 </div>
 
