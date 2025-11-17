@@ -1,12 +1,12 @@
 # A long-term continental Hydrologic dataset on seamless MERIT river network and ~180,000 MERIT unit basins
 
-![Alt text](../assets/project-figures/mean_streamflow_map.png)
+![Alt text](../assets/project-figures/global_mean_streamflow_map.png)
 
 ## Paper
 Ji, H., Song, Y., Bindas, T. et al. Distinct hydrologic response patterns and trends worldwide revealed by physics-embedded learning. Nat Commun 16, 9169 (2025). https://doi.org/10.1038/s41467-025-64367-1
 
 ### Results
-![Alt text](../assets/project-figures/nse_map.png)
+![Alt text](../assets/project-figures/global_nse_map.png)
 
 ## Data description
 
@@ -18,4 +18,5 @@ The dHBV2.0UH code is available at mhpi/generic_deltaModel: High-resolution diff
 
 
  
+
 
