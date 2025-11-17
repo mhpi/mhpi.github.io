@@ -1,4 +1,4 @@
-# A long-term continental Hydrologic dataset on seamless MERIT river network and ~180,000 MERIT unit basins
+# A long-term global-scale seamless streamflow dataset on around 2.94 million rivers.
 
 ![Alt text](../assets/project-figures/global_mean_streamflow_map.png)
 
@@ -18,5 +18,6 @@ The dHBV2.0UH code is available at mhpi/generic_deltaModel: High-resolution diff
 
 
  
+
 
 
