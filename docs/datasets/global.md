@@ -1,4 +1,4 @@
-# A long-term global-scale seamless streamflow dataset on around 2.94 million rivers.
+# A seamless global streamflow dataset for ~2.94 million rivers from 1980-2020.
 
 <div align="center">
     <img src="https://mhpi.github.io/assets/project-figures/global_mean_streamflow_map.png">
