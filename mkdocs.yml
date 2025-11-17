@@ -159,6 +159,8 @@ nav:
     - Datasets:
         - CONUS: 
             - Overview: datasets/CONUS.md
+        - Global:
+            - Overview: datasets/global.md
 
 extra_javascript:
   # - javascripts/plots.js
