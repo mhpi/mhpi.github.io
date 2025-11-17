@@ -39,7 +39,7 @@ Ji, H., Song, Y., Bindas, T. et al. Distinct hydrologic response patterns and tr
 
 ## Data description
 
-The global-scale seamless simulation from 1980-2020 ([zenodo])(https://zenodo.org/records/17552954) is produced by a coupled High-resolution, multiscale, differentiable global water model that incorporates both a rainfall-runoff module (𝛿HBV2.0) and channel routing module (δMC).
+The global-scale seamless simulation from 1980-2020 [zenodo](https://zenodo.org/records/17552954) is produced by a coupled High-resolution, multiscale, differentiable global water model that incorporates both a rainfall-runoff module (𝛿HBV2.0) and channel routing module (δMC2.0).
 
 ## Code Release
 
