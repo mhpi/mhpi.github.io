@@ -12,6 +12,7 @@ Ji, H., Song, Y., Bindas, T. et al. Distinct hydrologic response patterns and tr
     <img src="../assets/project-figures/global_nse_map.png">
 </div>
 
+<div align="center">
 | NSE | KGE | Bias | RMSE | FLV | FHV |
 |-----|-----|------|------|------|------|
 | 0.515 | 0.542 | -0.023 | 5.995 | 22.791 | -13.333 |
@@ -26,6 +27,7 @@ The dHBV2.0UH code is available at mhpi/generic_deltaModel: High-resolution diff
 
 
  
+
 
 
 
