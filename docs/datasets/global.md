@@ -11,6 +11,11 @@ Ji, H., Song, Y., Bindas, T. et al. Distinct hydrologic response patterns and tr
 <div align="center">
     <img src="../assets/project-figures/global_nse_map.png">
 </div>
+
+| NSE | KGE | Bias | RMSE | FLV | FHV |
+|-----|-----|------|------|------|------|
+| 0.515 | 0.542 | -0.023 | 5.995 | 22.791 | -13.333 |
+
 ## Data description
 
 The global-scale seamless simulation from 1980-2020 ([zenodo])(https://zenodo.org/records/17552954) is produced by a coupled High-resolution, multiscale, differentiable global water model that incorporates both a rainfall-runoff module (𝛿HBV2.0) and channel routing module (δMC).
@@ -21,6 +26,7 @@ The dHBV2.0UH code is available at mhpi/generic_deltaModel: High-resolution diff
 
 
  
+
 
 
 
