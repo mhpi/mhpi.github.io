@@ -22,6 +22,18 @@ A second-generation generic, scalable differentiable modeling framework on PyTor
 <div class="result" markdown>
   <div class="grid cards" markdown>
 
+-   [$\delta$ HBV1.1p __(Song et al. 2026)__][song_2026.md]
+
+    ---
+![Predcition of unseen extreme events in the training dataset](../assets/project-figures/dHBV1_1p_song_2026.jpg){align="left" width="120"}
+An improved differentiable HBV method that can surpass LSTM in predicting unseen extreme events with 50-year or 100-year return periods by around 10%, using an improved HBV structure, a new loss function, and more dynamic physical parameters.
+
+  </div>
+</div>
+
+<div class="result" markdown>
+  <div class="grid cards" markdown>
+
 -   [$\delta$ MC-Juniata-hydroDL2 __(Bindas et al. 2024)__][bindas_2023.md]
 
     ---
