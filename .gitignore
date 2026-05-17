@@ -11,6 +11,9 @@ __pycache__/
 # OS
 .DS_Store
 
+# Azure/Oryx leftovers
+oryx-build-commands.txt
+
 # Editor
 .idea/
 .vscode/
