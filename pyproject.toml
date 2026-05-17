@@ -1,0 +1,13 @@
+[project]
+name = "mhpi-website"
+version = "0.1.0"
+description = "HydroDL documentation site built with Zensical"
+requires-python = ">=3.10"
+dependencies = [
+    "zensical",
+    "mkdocs-git-authors-plugin",
+    "mkdocs-git-revision-date-localized-plugin",
+]
+
+[tool.uv]
+package = false

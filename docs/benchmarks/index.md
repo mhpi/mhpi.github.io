@@ -6,10 +6,9 @@ We recently updated our LSTM, and you can find the high-flow expert on hydroDL r
 
 ## CDF Comparison
 
-<figure markdown>
-  ![CDF](../assets/images/CDF_NSE_adjoint.png){width="750"}
-  <figcaption>Camels NSE of popular streamflow models (single, without ensemble) wth 15-year training. This is a temporal test (trained on ). We compared 3 versions of differentiable HBV model ("Unmodified"-- without any structural update; $\delta$HBV -- a sequential differentiable HBV published in Feng et al., 2022; and $\delta$HBV.adjoint, slightly modified from Song et al., 2023. See refs below) with two versions of hydroDL implementation (a high-flow expert and a low-flow expert). We also trained the LSTM from Kratzert 2019 for comparison.  </figcaption>
-</figure>
+![CDF](../assets/images/CDF_NSE_adjoint.png){width="750"}
+
+Camels NSE of popular streamflow models (single, without ensemble) wth 15-year training. This is a temporal test (trained on ). We compared 3 versions of differentiable HBV model ("Unmodified"-- without any structural update; $\delta$HBV -- a sequential differentiable HBV published in Feng et al., 2022; and $\delta$HBV.adjoint, slightly modified from Song et al., 2023. See refs below) with two versions of hydroDL implementation (a high-flow expert and a low-flow expert). We also trained the LSTM from Kratzert 2019 for comparison.
 
 ## Metric Tables
 
@@ -112,28 +111,20 @@ We recently updated our LSTM, and you can find the high-flow expert on hydroDL r
 ## Comparison with National Water Models
 Funded by CIROH projects, we have produced initial comparisons at the continental scale showing the superior performance of the differentiable models compared to both NOAA’s first-generation WRF-Hydro.NWM Model, version 1.2 (Tijerina‐Kreuzer et al., 2021) and version 2.1 (Cosgrove et al., 2024). The differentiable routing model developed in our FY22 CIROH project is used for runoff routing using Muskingum-Cunge method. We are now producing seamless streamflow simulations at high spatial resolution for the whole CONUS and the results below are demonstrating one of the simulations. We are still improving the runoff, forcing, and routing aspects of the product. Several updates are incoming. Please stand by for a data release!
 
-<figure markdown>
-  ![NWM1.2](../assets/images/NVM1.2.png){width="750"}
-  <figcaption>Condon diagrams comparing streamflow performance for $\delta$HBV -- differentiable HBV and National Water Model, version 1.2. The $\delta$HBV is trained from 10/1980 to 09/1995 and tested from 01/1981 to 12/2019. NWM Model, version 1.2 is uncalibrated and tested from 10/1984 to 09/1985 (reprinted from Tijerina‐Kreuzer et al., 2021)  </figcaption>
-</figure>
+![NWM1.2](../assets/images/NVM1.2.png){width="750"}
 
-<figure markdown>
-  ![NWM2.1](../assets/images/NVM2.1.png){width="750"}
-  <figcaption>Streamflow normalized Nash Sutcliffe Efficiency (NNSE) and correlation comparison between $\delta$HBV -- differentiable HBV and NWM Model, version 2.1. The $\delta$HBV is trained from 10/1980 to 09/1995 and tested from 01/1981 to 12/2019. NWM Model, version 2.1 is calibrated from 10/2008 to 09/2013 and tested from 10/2013 to 09/2016 (reprinted from Cosgrove et al., 2024). </figcaption>
-</figure>
+Condon diagrams comparing streamflow performance for $\delta$HBV -- differentiable HBV and National Water Model, version 1.2. The $\delta$HBV is trained from 10/1980 to 09/1995 and tested from 01/1981 to 12/2019. NWM Model, version 1.2 is uncalibrated and tested from 10/1984 to 09/1985 (reprinted from Tijerina‐Kreuzer et al., 2021)
+
+![NWM2.1](../assets/images/NVM2.1.png){width="750"}
+
+Streamflow normalized Nash Sutcliffe Efficiency (NNSE) and correlation comparison between $\delta$HBV -- differentiable HBV and NWM Model, version 2.1. The $\delta$HBV is trained from 10/1980 to 09/1995 and tested from 01/1981 to 12/2019. NWM Model, version 2.1 is calibrated from 10/2008 to 09/2013 and tested from 10/2013 to 09/2016 (reprinted from Cosgrove et al., 2024).
 
 ## Ensemble performances
 Significant benefits were achieved by ensembling **δHBV** and **LSTM** models across temporal, **PUB** (Prediction in Ungauged Basin), and **PUR** (Prediction in Ungauged region) tests. All models were trained from **October 1, 1980** to **September 30, 1995** on all **671 CAMELS** basins, and tested from **October 1, 1995** to **September 30, 2008** on a selected set of **531 basins**.
 
-<figure markdown>
-  ![ensemble](../assets/images/ensemble.jpg){width="750"}
-<figcaption>
+![ensemble](../assets/images/ensemble.jpg){width="750"}
 
 Median NSE values for 531 CAMELS basins, indicating model and ensemble performances for (a) temporal, (b) prediction in ungauged basin (PUB), and (c) prediction in ungauged region (PUR) tests. Different simulations are represented by variously-shaped and -colored points, and are organized by ensemble group, listed along the x-axis: LSTM, δHBV, LSTM+δHBV, and their “ensemble forcing” counterparts, LSTM<sup>ef</sup>, δHBV<sup>ef</sup>, and LSTM+δHBV<sup>ef</sup>. LSTM<sup>multi</sup> is a single LSTM model trained directly on all three forcing datasets at once. The superscript “ef” denotes the forcing datasets involved in each ensemble (choices of 1 for Daymet, 2 for NLDAS, and 3 for Maurer), while the “+” connects the model types used within an ensemble. The x-axis group and subscript “seed” indicate that simulation results were averaged based on three different random seeds (see Figure C1). Other points without “seed”, along with their corresponding error bars, are derived from the averages of metrics computed over repeated runs with three different random seeds. The error bar indicates one standard deviation above and below the average value for each simulation.
-
-
-</figcaption>
-</figure>
 
 **Citation**:  
 Li, P., Song, Y., Pan, M., Lawson, K., & Shen, C. (2025). *Ensembling Differentiable Process-based and Data-driven Models with Diverse Meteorological Forcing Datasets to Advance Streamflow Simulation*. **EGUsphere**, 2025, 1–74. https://doi.org/10.5194/egusphere-2025-483
