@@ -6,11 +6,10 @@ Our framework provides a standard for differentiable physics models to follow su
 
 ## Sections
 
-- [Datasets](../docs/documentation.md)
+- [Datasets](../docs/datasets.md)
 - [Neural Networks](../docs/neural_networks.md)
 - [Physics Models](../docs/physics_models.md)
 - [Experiments](../docs/experiments.md)
-- [Configs](../docs/configs.md)
 
 ## Plugins
 Plugins are a way to build off of open-source Deep Learning papers and repositories. 

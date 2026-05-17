@@ -1,8 +1,8 @@
-name: ci 
+name: ci
 on:
   push:
     branches:
-      - master 
+      - master
       - main
 permissions:
   contents: write
@@ -11,14 +11,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.2.2
-      - uses: actions/setup-python@v4.9.1
         with:
-          python-version: 3.12
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
       - uses: actions/cache@v4.2.3
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install git+https://taddyb:${{ secrets.GHCR_TOKEN }}@github.com/squidfunk/mkdocs-material-insiders.git
-      - run: pip install pillow cairosvg mkdocs-git-committers-plugin mkdocs-material-extensions mkdocs-git-authors-plugin mkdocs-git-revision-date-localized-plugin
-      - run: mkdocs build
-      - run: mkdocs gh-deploy --force
+      - run: uv sync --frozen
+      - run: uv run zensical build
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          force_orphan: true
