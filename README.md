@@ -1,12 +1,12 @@
 # HydroDL Website
 
-This is the repo that stores the mkdocs yaml file to create our website. GitHub CI integration has been set up to deploy the website on a `git push`, or from a web-browser push to `main`
+This is the repo that stores the zensical config (`mkdocs.yml`) used to build our website. GitHub CI integration has been set up to deploy the website on a `git push`, or from a web-browser push to `main`.
 
 **NOTE:** When you are pushing to this project, please give a good commit name that you understand, then verify that the build worked in the `actions` panel of the repo. The CI push will have the same name as the commit that you wrote. 
 
 ## How to add Coding Project to the Code Panel:
 
-1. Add your future page to the `mkdocs.yml` config file
+1. Add your future page to the `mkdocs.yml` config file (zensical reads this file)
 - Open the `mkdocs.yml` file
 - Scroll down to `nav:`
 - Following the format on the page, add your page underneath the `- Code:` tab
@@ -41,7 +41,7 @@ nav:
 
     This paper is currently in preprint
 ```
-- If you want to add a different Admonitions see [here](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)
+- If you want to add a different Admonitions see [here](https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/admonition/)
 
 3. Add your project card to the `codes/index.md` page
   - Open the `codes/index.md` file
@@ -69,4 +69,4 @@ nav:
 ```
 5. Verify your build works, and check mhpi.github.io to see your new project page.
 
-See https://squidfunk.github.io/mkdocs-material/ for information on website customization.
+See https://zensical.org/ for information on website customization.

@@ -37,13 +37,13 @@ git clone git@github.com:mhpi/generic_deltamodel.git
 uv pip install -e ./generic_deltamodel
 ```
 
-Pip and Conda are also supported, though UV is recommended. See [setup](./docs/setup.md) for further details.
+Pip and Conda are also supported, though UV is recommended. See [setup](https://github.com/mhpi/generic_deltamodel/blob/master/docs/setup.md) for further details.
 
 </br>
 
 ## Quick Start
 
-See [how to run](./docs/how_to_run.md).
+See [how to run](https://github.com/mhpi/generic_deltamodel/blob/master/docs/how_to_run.md).
 
 **Example -- Differentiable Parameter Learning**: Use an LSTM to learn parameters for the [HBV](https://en.wikipedia.org/wiki/HBV_hydrology_model) hydrological model.
 
@@ -172,7 +172,7 @@ Currently in development. Find more details and results in [Aboelyazeed et al. (
 
 ## Contributing
 
-We welcome contributions! Please submit changes via a fork and pull requests. For more details, refer to [docs/CONTRIBUTING.md](./docs/CONTRIBUTING.md).
+We welcome contributions! Please submit changes via a fork and pull requests. For more details, refer to [docs/CONTRIBUTING.md](https://github.com/mhpi/generic_deltamodel/blob/master/docs/CONTRIBUTING.md).
 
 ---
 

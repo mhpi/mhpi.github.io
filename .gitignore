@@ -1,0 +1,19 @@
+# Build output
+site/
+.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# OS
+.DS_Store
+
+# Azure/Oryx leftovers
+oryx-build-commands.txt
+
+# Editor
+.idea/
+.vscode/
